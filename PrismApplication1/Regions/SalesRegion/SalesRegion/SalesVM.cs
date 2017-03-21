@@ -546,7 +546,7 @@ namespace SalesRegion
                     using (var ctx = new RMSModel())
                     {
                         var res =
-                            ctx.Item.OfType<StockItem>()
+                            ctx.Item.OfType<StockItem>().ToList()
                                 .FirstOrDefault(x => x.DateCreated.GetValueOrDefault().Date == DateTime.Today.Date);
                         if (res != null) _specialTicket = res;
                     }
