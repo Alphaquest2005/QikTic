@@ -1,0 +1,36 @@
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll.config
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll.config
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.pdb
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.dll
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\System.Windows.Interactivity.dll
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.xml
+G:\PrismApplication1\RMSDataAccessLayer\bin\Debug\System.Windows.Interactivity.xml
+G:\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.csprojResolveAssemblyReference.cache
+G:\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.dll
+G:\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.pdb
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll.config
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.pdb
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\BarCodes.dll
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.dll
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\BarCodes.pdb
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.xml
+C:\prism\PrismApplication1\RMSDataAccessLayer\bin\Debug\System.Windows.Interactivity.xml
+C:\prism\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.dll
+C:\prism\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll.config
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\bin\Debug\System.Windows.Interactivity.xml
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\RMSDataAccessLayer\obj\Debug\RMSDataAccessLayer.pdb

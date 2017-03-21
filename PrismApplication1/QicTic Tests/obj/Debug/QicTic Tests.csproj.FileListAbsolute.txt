@@ -1,0 +1,10 @@
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.dll
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.pdb
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.dll
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.pdb
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csprojResolveAssemblyReference.cache
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.dll
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.pdb
+C:\Prism\QicTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.dll.config

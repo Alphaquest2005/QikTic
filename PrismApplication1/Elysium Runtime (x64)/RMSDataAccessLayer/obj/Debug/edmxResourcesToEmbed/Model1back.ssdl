@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RMSEntities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RMSEntitiesStoreContainer">
+    <EntitySet Name="Item" EntityType="RMSEntities.Store.Item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionBase" EntityType="RMSEntities.Store.TransactionBase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionEntryBase" EntityType="RMSEntities.Store.TransactionEntryBase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Company" EntityType="RMSEntities.Store.Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customers" EntityType="RMSEntities.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pass" EntityType="RMSEntities.Store.Pass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cashiers" EntityType="RMSEntities.Store.Cashiers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Batches" EntityType="RMSEntities.Store.Batches" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Stations" EntityType="RMSEntities.Store.Stations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Stores" EntityType="RMSEntities.Store.Stores" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TenderEntry" EntityType="RMSEntities.Store.TenderEntry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionBase_Ticket" EntityType="RMSEntities.Store.TransactionBase_Ticket" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TenderEntry_TenderEntryAccount" EntityType="RMSEntities.Store.TenderEntry_TenderEntryAccount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionBase_Perscription" EntityType="RMSEntities.Store.TransactionBase_Perscription" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionEntryBase_TicketEntry" EntityType="RMSEntities.Store.TransactionEntryBase_TicketEntry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionEntryBase_TransactionEntry" EntityType="RMSEntities.Store.TransactionEntryBase_TransactionEntry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionBase_Transaction" EntityType="RMSEntities.Store.TransactionBase_Transaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TenderEntry_TenderEntryCash" EntityType="RMSEntities.Store.TenderEntry_TenderEntryCash" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TenderEntry_TenderEntryCreditCard" EntityType="RMSEntities.Store.TenderEntry_TenderEntryCreditCard" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TenderEntry_TenderEntryCheck" EntityType="RMSEntities.Store.TenderEntry_TenderEntryCheck" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TransactionTransactionEntry" Association="RMSEntities.Store.TransactionTransactionEntry">
+      <End Role="Transaction" EntitySet="TransactionBase" />
+      <End Role="TransactionEntry" EntitySet="TransactionEntryBase" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerTransaction" Association="RMSEntities.Store.CustomerTransaction">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Transaction" EntitySet="TransactionBase" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerPass" Association="RMSEntities.Store.CustomerPass">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Pass" EntitySet="Pass" />
+    </AssociationSet>
+    <AssociationSet Name="PassTicket" Association="RMSEntities.Store.PassTicket">
+      <End Role="Pass" EntitySet="Pass" />
+      <End Role="Ticket" EntitySet="TransactionBase_Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="ItemTransactionEntryBase" Association="RMSEntities.Store.ItemTransactionEntryBase">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="TransactionEntryBase" EntitySet="TransactionEntryBase" />
+    </AssociationSet>
+    <AssociationSet Name="CashierTransactionBase" Association="RMSEntities.Store.CashierTransactionBase">
+      <End Role="Cashier" EntitySet="Cashiers" />
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+    </AssociationSet>
+    <AssociationSet Name="BatchTransactionBase" Association="RMSEntities.Store.BatchTransactionBase">
+      <End Role="Batch" EntitySet="Batches" />
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+    </AssociationSet>
+    <AssociationSet Name="StoreStation" Association="RMSEntities.Store.StoreStation">
+      <End Role="Store" EntitySet="Stores" />
+      <End Role="Station" EntitySet="Stations" />
+    </AssociationSet>
+    <AssociationSet Name="StationTransactionBase" Association="RMSEntities.Store.StationTransactionBase">
+      <End Role="Station" EntitySet="Stations" />
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+    </AssociationSet>
+    <AssociationSet Name="TenderEntryAccountCustomer" Association="RMSEntities.Store.TenderEntryAccountCustomer">
+      <End Role="TenderEntryAccount" EntitySet="TenderEntry_TenderEntryAccount" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="TenderEntryTransactionBase" Association="RMSEntities.Store.TenderEntryTransactionBase">
+      <End Role="TenderEntry" EntitySet="TenderEntry" />
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_inherits_TransactionBase" Association="RMSEntities.Store.FK_Ticket_inherits_TransactionBase">
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+      <End Role="Ticket" EntitySet="TransactionBase_Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderEntryAccount_inherits_TenderEntry" Association="RMSEntities.Store.FK_TenderEntryAccount_inherits_TenderEntry">
+      <End Role="TenderEntry" EntitySet="TenderEntry" />
+      <End Role="TenderEntryAccount" EntitySet="TenderEntry_TenderEntryAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Perscription_inherits_TransactionBase" Association="RMSEntities.Store.FK_Perscription_inherits_TransactionBase">
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+      <End Role="Perscription" EntitySet="TransactionBase_Perscription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TicketEntry_inherits_TransactionEntryBase" Association="RMSEntities.Store.FK_TicketEntry_inherits_TransactionEntryBase">
+      <End Role="TransactionEntryBase" EntitySet="TransactionEntryBase" />
+      <End Role="TicketEntry" EntitySet="TransactionEntryBase_TicketEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionEntry_inherits_TransactionEntryBase" Association="RMSEntities.Store.FK_TransactionEntry_inherits_TransactionEntryBase">
+      <End Role="TransactionEntryBase" EntitySet="TransactionEntryBase" />
+      <End Role="TransactionEntry" EntitySet="TransactionEntryBase_TransactionEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_inherits_TransactionBase" Association="RMSEntities.Store.FK_Transaction_inherits_TransactionBase">
+      <End Role="TransactionBase" EntitySet="TransactionBase" />
+      <End Role="Transaction" EntitySet="TransactionBase_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderEntryCash_inherits_TenderEntry" Association="RMSEntities.Store.FK_TenderEntryCash_inherits_TenderEntry">
+      <End Role="TenderEntry" EntitySet="TenderEntry" />
+      <End Role="TenderEntryCash" EntitySet="TenderEntry_TenderEntryCash" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderEntryCreditCard_inherits_TenderEntry" Association="RMSEntities.Store.FK_TenderEntryCreditCard_inherits_TenderEntry">
+      <End Role="TenderEntry" EntitySet="TenderEntry" />
+      <End Role="TenderEntryCreditCard" EntitySet="TenderEntry_TenderEntryCreditCard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderEntryCheck_inherits_TenderEntry" Association="RMSEntities.Store.FK_TenderEntryCheck_inherits_TenderEntry">
+      <End Role="TenderEntry" EntitySet="TenderEntry" />
+      <End Role="TenderEntryCheck" EntitySet="TenderEntry_TenderEntryCheck" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ItemNotDiscountable" Type="bit" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="ItemLookupCode" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Category" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="ExtendedDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="ItemType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SalesTax" Type="decimal" Nullable="false" DefaultValue="0" Precision="5" Scale="3" />
+  </EntityType>
+  <EntityType Name="TransactionBase">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="StationId" Type="int" Nullable="false" />
+    <Property Name="BatchId" Type="int" Nullable="false" />
+    <Property Name="TransactionNumber" Type="int" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="true" />
+    <Property Name="CashierId" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="ReferenceNumber" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="true" />
+    <Property Name="StoreCode" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="TransactionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionEntryBase">
+    <Key>
+      <PropertyRef Name="TransactionEntryId" />
+    </Key>
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="TransactionEntryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" DefaultValue="1" Precision="8" Scale="3" />
+    <Property Name="Taxable" Type="bit" Nullable="false" DefaultValue="true" />
+    <Property Name="Comment" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="TransactionTime" Type="datetime" Nullable="true" />
+    <Property Name="SalesTaxPercent" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Discount" Type="decimal" Nullable="true" DefaultValue="0" Precision="10" Scale="3" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SoftwareName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pass">
+    <Key>
+      <PropertyRef Name="PassId" />
+    </Key>
+    <Property Name="PassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cashiers">
+    <Key>
+      <PropertyRef Name="CashierId" />
+    </Key>
+    <Property Name="CashierId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Batches">
+    <Key>
+      <PropertyRef Name="BatchId" />
+    </Key>
+    <Property Name="BatchId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OpeningCash" Type="float" Nullable="false" />
+    <Property Name="EndingCash" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stations">
+    <Key>
+      <PropertyRef Name="StationId" />
+    </Key>
+    <Property Name="StationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StationCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StoreId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoreCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StoreAddress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry">
+    <Key>
+      <PropertyRef Name="TenderEntryId" />
+    </Key>
+    <Property Name="TenderEntryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionBase_Ticket">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="PassId" Type="int" Nullable="true" />
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry_TenderEntryAccount">
+    <Key>
+      <PropertyRef Name="TenderEntryId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="AccountAmount" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="TenderEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionBase_Perscription">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="DoctorId" Type="int" Nullable="false" />
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionEntryBase_TicketEntry">
+    <Key>
+      <PropertyRef Name="TransactionEntryId" />
+    </Key>
+    <Property Name="VehicleNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="StartDateTime" Type="datetime" Nullable="false" />
+    <Property Name="EndDateTime" Type="datetime" Nullable="true" />
+    <Property Name="TransactionEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionEntryBase_TransactionEntry">
+    <Key>
+      <PropertyRef Name="TransactionEntryId" />
+    </Key>
+    <Property Name="TransactionEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionBase_Transaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry_TenderEntryCash">
+    <Key>
+      <PropertyRef Name="TenderEntryId" />
+    </Key>
+    <Property Name="CashAmount" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="TenderEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry_TenderEntryCreditCard">
+    <Key>
+      <PropertyRef Name="TenderEntryId" />
+    </Key>
+    <Property Name="CreditCardNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CreditCardAmount" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="TenderEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry_TenderEntryCheck">
+    <Key>
+      <PropertyRef Name="TenderEntryId" />
+    </Key>
+    <Property Name="CheckNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CheckAmount" Type="decimal" Nullable="false" Precision="10" Scale="3" />
+    <Property Name="TenderEntryId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="TransactionTransactionEntry">
+    <End Role="Transaction" Type="RMSEntities.Store.TransactionBase" Multiplicity="1" />
+    <End Role="TransactionEntry" Type="RMSEntities.Store.TransactionEntryBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="TransactionEntry">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomerTransaction">
+    <End Role="Customer" Type="RMSEntities.Store.Customers" Multiplicity="0..1" />
+    <End Role="Transaction" Type="RMSEntities.Store.TransactionBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomerPass">
+    <End Role="Customer" Type="RMSEntities.Store.Customers" Multiplicity="1" />
+    <End Role="Pass" Type="RMSEntities.Store.Pass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Pass">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PassTicket">
+    <End Role="Pass" Type="RMSEntities.Store.Pass" Multiplicity="0..1" />
+    <End Role="Ticket" Type="RMSEntities.Store.TransactionBase_Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pass">
+        <PropertyRef Name="PassId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="PassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ItemTransactionEntryBase">
+    <End Role="Item" Type="RMSEntities.Store.Item" Multiplicity="1" />
+    <End Role="TransactionEntryBase" Type="RMSEntities.Store.TransactionEntryBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="TransactionEntryBase">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CashierTransactionBase">
+    <End Role="Cashier" Type="RMSEntities.Store.Cashiers" Multiplicity="1" />
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cashier">
+        <PropertyRef Name="CashierId" />
+      </Principal>
+      <Dependent Role="TransactionBase">
+        <PropertyRef Name="CashierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BatchTransactionBase">
+    <End Role="Batch" Type="RMSEntities.Store.Batches" Multiplicity="1" />
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Batch">
+        <PropertyRef Name="BatchId" />
+      </Principal>
+      <Dependent Role="TransactionBase">
+        <PropertyRef Name="BatchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StoreStation">
+    <End Role="Store" Type="RMSEntities.Store.Stores" Multiplicity="1" />
+    <End Role="Station" Type="RMSEntities.Store.Stations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Station">
+        <PropertyRef Name="StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StationTransactionBase">
+    <End Role="Station" Type="RMSEntities.Store.Stations" Multiplicity="1" />
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="StationId" />
+      </Principal>
+      <Dependent Role="TransactionBase">
+        <PropertyRef Name="StationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TenderEntryAccountCustomer">
+    <End Role="TenderEntryAccount" Type="RMSEntities.Store.TenderEntry_TenderEntryAccount" Multiplicity="*" />
+    <End Role="Customer" Type="RMSEntities.Store.Customers" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="TenderEntryAccount">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TenderEntryTransactionBase">
+    <End Role="TenderEntry" Type="RMSEntities.Store.TenderEntry" Multiplicity="*" />
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionBase">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="TenderEntry">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_inherits_TransactionBase">
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Ticket" Type="RMSEntities.Store.TransactionBase_Ticket" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionBase">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderEntryAccount_inherits_TenderEntry">
+    <End Role="TenderEntry" Type="RMSEntities.Store.TenderEntry" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TenderEntryAccount" Type="RMSEntities.Store.TenderEntry_TenderEntryAccount" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TenderEntry">
+        <PropertyRef Name="TenderEntryId" />
+      </Principal>
+      <Dependent Role="TenderEntryAccount">
+        <PropertyRef Name="TenderEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Perscription_inherits_TransactionBase">
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Perscription" Type="RMSEntities.Store.TransactionBase_Perscription" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionBase">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="Perscription">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TicketEntry_inherits_TransactionEntryBase">
+    <End Role="TransactionEntryBase" Type="RMSEntities.Store.TransactionEntryBase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TicketEntry" Type="RMSEntities.Store.TransactionEntryBase_TicketEntry" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionEntryBase">
+        <PropertyRef Name="TransactionEntryId" />
+      </Principal>
+      <Dependent Role="TicketEntry">
+        <PropertyRef Name="TransactionEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionEntry_inherits_TransactionEntryBase">
+    <End Role="TransactionEntryBase" Type="RMSEntities.Store.TransactionEntryBase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TransactionEntry" Type="RMSEntities.Store.TransactionEntryBase_TransactionEntry" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionEntryBase">
+        <PropertyRef Name="TransactionEntryId" />
+      </Principal>
+      <Dependent Role="TransactionEntry">
+        <PropertyRef Name="TransactionEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaction_inherits_TransactionBase">
+    <End Role="TransactionBase" Type="RMSEntities.Store.TransactionBase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Transaction" Type="RMSEntities.Store.TransactionBase_Transaction" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionBase">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderEntryCash_inherits_TenderEntry">
+    <End Role="TenderEntry" Type="RMSEntities.Store.TenderEntry" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TenderEntryCash" Type="RMSEntities.Store.TenderEntry_TenderEntryCash" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TenderEntry">
+        <PropertyRef Name="TenderEntryId" />
+      </Principal>
+      <Dependent Role="TenderEntryCash">
+        <PropertyRef Name="TenderEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderEntryCreditCard_inherits_TenderEntry">
+    <End Role="TenderEntry" Type="RMSEntities.Store.TenderEntry" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TenderEntryCreditCard" Type="RMSEntities.Store.TenderEntry_TenderEntryCreditCard" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TenderEntry">
+        <PropertyRef Name="TenderEntryId" />
+      </Principal>
+      <Dependent Role="TenderEntryCreditCard">
+        <PropertyRef Name="TenderEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderEntryCheck_inherits_TenderEntry">
+    <End Role="TenderEntry" Type="RMSEntities.Store.TenderEntry" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TenderEntryCheck" Type="RMSEntities.Store.TenderEntry_TenderEntryCheck" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TenderEntry">
+        <PropertyRef Name="TenderEntryId" />
+      </Principal>
+      <Dependent Role="TenderEntryCheck">
+        <PropertyRef Name="TenderEntryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

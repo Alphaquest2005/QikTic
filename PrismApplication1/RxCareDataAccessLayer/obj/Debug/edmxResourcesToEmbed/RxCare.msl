@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RxCareModelStoreContainer" CdmEntityContainer="RxCareEntities">
+    <EntitySetMapping Name="Conditions">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.Condition)">
+        <MappingFragment StoreEntitySet="Conditions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ConditionName" ColumnName="ConditionName" />
+          <ScalarProperty Name="Cause" ColumnName="Cause" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.Doctor)">
+        <MappingFragment StoreEntitySet="Doctors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Office_Address" ColumnName="Office_Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DoctorPhones">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.DoctorPhone)">
+        <MappingFragment StoreEntitySet="DoctorPhones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.InventoryItem)">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryQuantities">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.InventoryQuantity)">
+        <MappingFragment StoreEntitySet="InventoryQuantities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="InventoryItemId" ColumnName="InventoryItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.Medicine)">
+        <MappingFragment StoreEntitySet="Medicines">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Generic" ColumnName="Generic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineContents">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.MedicineContent)">
+        <MappingFragment StoreEntitySet="MedicineContents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineInventory">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.MedicineInventory)">
+        <MappingFragment StoreEntitySet="MedicineInventory">
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+          <ScalarProperty Name="InventoryItemId" ColumnName="InventoryItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineNegativeInteractions">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.MedicineNegativeInteraction)">
+        <MappingFragment StoreEntitySet="MedicineNegativeInteractions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MedicineId2" ColumnName="MedicineId2" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineSideEffects">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.MedicineSideEffect)">
+        <MappingFragment StoreEntitySet="MedicineSideEffects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SideEffect" ColumnName="SideEffect" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineUnitPrices">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.MedicineUnitPrice)">
+        <MappingFragment StoreEntitySet="MedicineUnitPrices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="MedicineID" ColumnName="MedicineID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.Patient)">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Property1" ColumnName="Property1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientAddresses">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.PatientAddress)">
+        <MappingFragment StoreEntitySet="PatientAddresses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Parish" ColumnName="Parish" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientConditions">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.PatientCondition)">
+        <MappingFragment StoreEntitySet="PatientConditions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="ConditionsId" ColumnName="ConditionsId" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientPhones">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.PatientPhone)">
+        <MappingFragment StoreEntitySet="PatientPhones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PresciptionDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.PresciptionDetail)">
+        <MappingFragment StoreEntitySet="PresciptionDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Times" ColumnName="Times" />
+          <ScalarProperty Name="Dosage" ColumnName="Dosage" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="PrescriptionId" ColumnName="PrescriptionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prescriptions">
+      <EntityTypeMapping TypeName="IsTypeOf(RxCareModel.Prescription)">
+        <MappingFragment StoreEntitySet="Prescriptions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PrescriptionNumber" ColumnName="PrescriptionNumber" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MedicineInventories1" TypeName="RxCareModel.MedicineInventories" StoreEntitySet="MedicineInventories1">
+      <EndProperty Name="InventoryItem">
+        <ScalarProperty Name="Id" ColumnName="InventoryItems_Id" />
+      </EndProperty>
+      <EndProperty Name="Medicine">
+        <ScalarProperty Name="Id" ColumnName="Medicines_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="SalesRegion.SalesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:data="clr-namespace:RMSDataAccessLayer;assembly=RMSDataAccessLayer"
+             xmlns:design="clr-namespace:SalesRegion.Design"
+             xmlns:local="clr-namespace:SalesRegion"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Width="424"
+             HorizontalAlignment="Left"
+             d:DesignHeight="300"
+             ClipToBounds="False"
+             ScrollViewer.VerticalScrollBarVisibility="Disabled"
+             Unloaded="UserControl_Unloaded_1"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <local:ArithmeticConverter x:Key="mathconverter" />
+
+        <ControlTemplate x:Key="ListTemplate" TargetType="{x:Type ListBox}">
+            <Border x:Name="Bd"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Padding="1"
+                    SnapsToDevicePixels="true">
+                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="false">
+                    <!--<Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>-->
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ItemsPanelTemplate x:Key="ItemPanelTemplate">
+            <StackPanel Width="auto"
+                        Height="Auto"
+                        Margin="0,0,0,0"
+                        ClipToBounds="False" />
+        </ItemsPanelTemplate>
+        <Style x:Key="SalesItemStyle" TargetType="ListBoxItem">
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="ItemsControl.AlternationIndex" Value="1" />
+                        <Condition Property="IsSelected" Value="False" />
+                        <Condition Property="IsMouseOver" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="#EE686868" />
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+
+    </UserControl.Resources>
+
+    <StackPanel Margin="5,5,4,-705" Orientation="Vertical">
+        <Grid Height="Auto"
+              Margin="0,0,0.2,0"
+              Background="#FFA0A0A0">
+            <Grid.Resources>
+                <DataTemplate DataType="{x:Type data:Ticket}">
+                    <Grid />
+                </DataTemplate>
+
+            </Grid.Resources>
+            <ContentControl Name="SalesHeader" Content="{Binding Path=TransactionData}" />
+
+
+
+        </Grid>
+        <Canvas x:Name="ppcan"
+                Width="415"
+                Height="1000"
+                Margin="0,0,0.2,0"
+                Background="#FF424242"
+                Focusable="False">
+
+            <local:SalesTaskPad x:Name="SalesPad"
+                                Width="Auto"
+                                Height="Auto"
+                                DataContext="{Binding SelectedItem,
+                                                      ElementName=SalesLst}"
+                                FocusManager.FocusedElement="{local:FirstFocusedElement}">
+                <!--<local:SalesTaskPad x:Name="SalesPad" FocusManager.FocusedElement="{local:FirstFocusedElement}"  ClipToBounds="True" FocusManager.IsFocusScope="True"  Height="300" Width="623">-->
+
+            </local:SalesTaskPad>
+
+
+        </Canvas>
+
+    </StackPanel>
+
+</UserControl>

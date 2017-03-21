@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="RMSEntities" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="RMSModel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Transaction" EntityType="RMSEntities.Transaction" />
+    <EntitySet Name="TransactionEntry" EntityType="RMSEntities.TransactionEntry" />
+    <AssociationSet Name="TransactionTransactionEntry" Association="RMSEntities.TransactionTransactionEntry">
+      <End Role="Transaction" EntitySet="Transaction" />
+      <End Role="TransactionEntry" EntitySet="TransactionEntry" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+    </Key>
+    <Property Type="Int32" Name="TransactionNumber" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="TransactionEntries" Relationship="RMSEntities.TransactionTransactionEntry" FromRole="Transaction" ToRole="TransactionEntry" />
+    <Property Type="Int32" Name="CashierID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionEntry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TransactionNumber" Nullable="false" />
+    <NavigationProperty Name="Transaction" Relationship="RMSEntities.TransactionTransactionEntry" FromRole="TransactionEntry" ToRole="Transaction" />
+  </EntityType>
+  <Association Name="TransactionTransactionEntry">
+    <End Type="RMSEntities.Transaction" Role="Transaction" Multiplicity="1" />
+    <End Type="RMSEntities.TransactionEntry" Role="TransactionEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="TransactionNumber" />
+      </Principal>
+      <Dependent Role="TransactionEntry">
+        <PropertyRef Name="TransactionNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

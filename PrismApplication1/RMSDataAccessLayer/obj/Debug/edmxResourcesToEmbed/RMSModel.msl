@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RMSModelStoreContainer" CdmEntityContainer="QuickSalesEntities1">
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="RMSEntities.Batch">
+        <MappingFragment StoreEntitySet="Batches">
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="OpeningCash" ColumnName="OpeningCash" />
+          <ScalarProperty Name="EndingCash" ColumnName="EndingCash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cashiers">
+      <EntityTypeMapping TypeName="RMSEntities.Cashier">
+        <MappingFragment StoreEntitySet="Cashiers">
+          <ScalarProperty Name="CashierId" ColumnName="CashierId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="RMSEntities.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SoftwareName" ColumnName="SoftwareName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="RMSEntities.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="RMSEntities.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ItemNotDiscountable" ColumnName="ItemNotDiscountable" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemLookupCode" ColumnName="ItemLookupCode" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ExtendedDescription" ColumnName="ExtendedDescription" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="SalesTax" ColumnName="SalesTax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passes">
+      <EntityTypeMapping TypeName="RMSEntities.Pass">
+        <MappingFragment StoreEntitySet="Pass">
+          <ScalarProperty Name="PassId" ColumnName="PassId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stations">
+      <EntityTypeMapping TypeName="RMSEntities.Station">
+        <MappingFragment StoreEntitySet="Stations">
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="RMSEntities.Store">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntries">
+      <EntityTypeMapping TypeName="RMSEntities.TenderEntry">
+        <MappingFragment StoreEntitySet="TenderEntry">
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntry_TenderEntryCash">
+      <EntityTypeMapping TypeName="RMSEntities.TenderEntry_TenderEntryCash">
+        <MappingFragment StoreEntitySet="TenderEntry_TenderEntryCash">
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntry_TenderEntryCheck">
+      <EntityTypeMapping TypeName="RMSEntities.TenderEntry_TenderEntryCheck">
+        <MappingFragment StoreEntitySet="TenderEntry_TenderEntryCheck">
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntry_TenderEntryCreditCard">
+      <EntityTypeMapping TypeName="RMSEntities.TenderEntry_TenderEntryCreditCard">
+        <MappingFragment StoreEntitySet="TenderEntry_TenderEntryCreditCard">
+          <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntryExes">
+      <EntityTypeMapping TypeName="RMSEntities.TenderEntryEx">
+        <MappingFragment StoreEntitySet="TenderEntryEx">
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="CashAmount" ColumnName="CashAmount" />
+          <ScalarProperty Name="CreditCardAmount" ColumnName="CreditCardAmount" />
+          <ScalarProperty Name="CheckAmount" ColumnName="CheckAmount" />
+          <ScalarProperty Name="AccountAmount" ColumnName="AccountAmount" />
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+          <ScalarProperty Name="TenderType" ColumnName="TenderType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionBases">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionBase">
+        <MappingFragment StoreEntitySet="TransactionBase">
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="TransactionNumber" ColumnName="TransactionNumber" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CashierId" ColumnName="CashierId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionBase_Perscription">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionBase_Perscription">
+        <MappingFragment StoreEntitySet="TransactionBase_Perscription">
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionBase_Ticket">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionBase_Ticket">
+        <MappingFragment StoreEntitySet="TransactionBase_Ticket">
+          <ScalarProperty Name="PassId" ColumnName="PassId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionBase_Transaction">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionBase_Transaction">
+        <MappingFragment StoreEntitySet="TransactionBase_Transaction">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionEntryBases">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionEntryBase">
+        <MappingFragment StoreEntitySet="TransactionEntryBase">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="SalesTaxPercent" ColumnName="SalesTaxPercent" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionEntryBase_TicketEntry">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionEntryBase_TicketEntry">
+        <MappingFragment StoreEntitySet="TransactionEntryBase_TicketEntry">
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionEntryBase_TransactionEntry">
+      <EntityTypeMapping TypeName="RMSEntities.TransactionEntryBase_TransactionEntry">
+        <MappingFragment StoreEntitySet="TransactionEntryBase_TransactionEntry">
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TenderEntry_TenderEntryAccount" TypeName="RMSEntities.TenderEntry_TenderEntryAccount" StoreEntitySet="TenderEntry_TenderEntryAccount">
+      <EndProperty Name="TenderEntry">
+        <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+      </EndProperty>
+      <EndProperty Name="Customers">
+        <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

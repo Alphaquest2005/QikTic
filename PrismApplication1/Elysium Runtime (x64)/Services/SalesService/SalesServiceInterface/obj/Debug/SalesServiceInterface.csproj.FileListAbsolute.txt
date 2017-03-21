@@ -1,0 +1,14 @@
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceInterface.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceInterface.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceObjects.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceObjects.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceObjects.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\bin\Debug\SalesServiceObjects.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceInterface\obj\Debug\SalesServiceInterface.pdb

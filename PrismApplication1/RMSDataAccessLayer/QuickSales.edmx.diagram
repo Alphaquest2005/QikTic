@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ce31aa4d1c794e86b41a9233ae3b5929" Name="Ticket" ZoomLevel="77" >
+        <EntityTypeShape EntityType="RMSEntities.Ticket" Width="1.5" PointX="3.75" PointY="1.375" />
+        <EntityTypeShape EntityType="RMSEntities.TicketEntry" Width="2.125" PointX="14.625" PointY="2" />
+        <EntityTypeShape EntityType="RMSEntities.TransactionEntryBase" Width="1.75" PointX="9.5" PointY="1.875" />
+        <EntityTypeShape EntityType="RMSEntities.TransactionBase" Width="1.5" PointX="4" PointY="4" />
+        <InheritanceConnector EntityType="RMSEntities.Ticket" />
+        <EntityTypeShape EntityType="RMSEntities.Item" Width="2.125" PointX="14.25" PointY="5.75" />
+        <EntityTypeShape EntityType="RMSEntities.TicketSetup" Width="1.5" PointX="19.875" PointY="6.125" />
+        <EntityTypeShape EntityType="RMSEntities.TicketItem" PointX="17.625" PointY="5.875" Width="1.5" />
+        <InheritanceConnector EntityType="RMSEntities.TicketItem" />
+        <EntityTypeShape EntityType="RMSEntities.Company" Width="1.5" PointX="10" PointY="6.875" />
+        <EntityTypeShape EntityType="RMSEntities.Store" Width="1.5" PointX="12.25" PointY="9.875" />
+        <AssociationConnector Association="RMSEntities.CompanyStore" />
+        <EntityTypeShape EntityType="RMSEntities.TransactionEntry" Width="2.25" PointX="14.625" PointY="3.875" />
+        <InheritanceConnector EntityType="RMSEntities.TicketEntry" />
+        <InheritanceConnector EntityType="RMSEntities.TransactionEntry" />
+        <AssociationConnector Association="RMSEntities.FK_ItemTransactionEntryBase" />
+        <AssociationConnector Association="RMSEntities.FK_TransactionTransactionEntry" />
+        <EntityTypeShape EntityType="RMSEntities.Batch" Width="1.5" PointX="7.5" PointY="6.25" />
+        <AssociationConnector Association="RMSEntities.BatchTransactionBase" />
+        <AssociationConnector Association="RMSEntities.FK_TransactionBase_Ticket_Batches" />
+        <EntityTypeShape EntityType="RMSEntities.Cashier" Width="1.5" PointX="9.75" PointY="10.375" />
+        <AssociationConnector Association="RMSEntities.CashierTransactionBase" />
+        <AssociationConnector Association="RMSEntities.BatchCashier" />
+        <AssociationConnector Association="RMSEntities.BatchCashier1" />
+        <EntityTypeShape EntityType="RMSEntities.TenderEntryEx" Width="1.5" PointX="1" PointY="4" />
+        <AssociationConnector Association="RMSEntities.FK_TransactionBaseTenderEntryEx" />
+        <AssociationConnector Association="RMSEntities.TicketSetupItem" />
+        <AssociationConnector Association="RMSEntities.FK_TicketSetupTicketItem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

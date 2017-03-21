@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RMSEntitiesStoreContainer" CdmEntityContainer="RMSModel">
+    <EntitySetMapping Name="Transaction">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Transaction)">
+        <MappingFragment StoreEntitySet="Transaction">
+          <ScalarProperty Name="TransactionNumber" ColumnName="TransactionNumber" />
+          <ScalarProperty Name="CashierID" ColumnName="CashierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionEntry">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TransactionEntry)">
+        <MappingFragment StoreEntitySet="TransactionEntry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TransactionNumber" ColumnName="TransactionNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

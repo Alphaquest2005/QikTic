@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RMSEntitiesStoreContainer" CdmEntityContainer="RMSModel">
+    <EntitySetMapping Name="Item">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Item)">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ItemNotDiscountable" ColumnName="ItemNotDiscountable" />
+          <ScalarProperty Name="ItemLookupCode" ColumnName="ItemLookupCode" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ExtendedDescription" ColumnName="ExtendedDescription" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SalesTax" ColumnName="SalesTax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TicketItem)">
+        <MappingFragment StoreEntitySet="Item_TicketItem">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Price1" ColumnName="Price1" />
+          <ScalarProperty Name="Price2" ColumnName="Price2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Medicine)">
+        <MappingFragment StoreEntitySet="Item_Medicine">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="SuggestedDosage" ColumnName="SuggestedDosage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.StockItem)">
+        <MappingFragment StoreEntitySet="Item_StockItem">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionBase">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TransactionBase)">
+        <MappingFragment StoreEntitySet="TransactionBase">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="CloseBatchId" ColumnName="CloseBatchId" />
+          <ScalarProperty Name="TransactionNumber" ColumnName="TransactionNumber" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CashierId" ColumnName="CashierId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="OpenClose" ColumnName="OpenClose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Ticket)">
+        <MappingFragment StoreEntitySet="TransactionBase_Ticket">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="PassId" ColumnName="PassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Prescription)">
+        <MappingFragment StoreEntitySet="TransactionBase_Prescription">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="Repeat" ColumnName="Repeat" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Transaction)">
+        <MappingFragment StoreEntitySet="TransactionBase_Transaction">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.QuickPrescription)">
+        <MappingFragment StoreEntitySet="TransactionBase_QuickPrescription">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionEntryBase">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TransactionEntryBase)">
+        <MappingFragment StoreEntitySet="TransactionEntryBase">
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TransactionTime" ColumnName="TransactionTime" />
+          <ScalarProperty Name="SalesTaxPercent" ColumnName="SalesTaxPercent" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TicketEntry)">
+        <MappingFragment StoreEntitySet="TransactionEntryBase_TicketEntry">
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+          <ScalarProperty Name="VehicleNumber" ColumnName="VehicleNumber" />
+          <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+          <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TransactionEntry)">
+        <MappingFragment StoreEntitySet="TransactionEntryBase_TransactionEntry">
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.PrescriptionEntry)">
+        <MappingFragment StoreEntitySet="TransactionEntryBase_PrescriptionEntry">
+          <ScalarProperty Name="TransactionEntryId" ColumnName="TransactionEntryId" />
+          <ScalarProperty Name="Dosage" ColumnName="Dosage" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Company)">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="SoftwareName" ColumnName="SoftwareName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Motto" ColumnName="Motto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persons">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Person)">
+        <MappingFragment StoreEntitySet="Persons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="InActive" ColumnName="InActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Cashier)">
+        <MappingFragment StoreEntitySet="Persons_Cashier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SPassword" ColumnName="SPassword" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Doctor)">
+        <MappingFragment StoreEntitySet="Persons_Doctor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Patient)">
+        <MappingFragment StoreEntitySet="Persons_Patient">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Customers)">
+        <MappingFragment StoreEntitySet="Persons_Customers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pass">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Pass)">
+        <MappingFragment StoreEntitySet="Pass">
+          <ScalarProperty Name="PassId" ColumnName="PassId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="PassNumber" ColumnName="PassNumber" />
+          <ScalarProperty Name="FreePass" ColumnName="FreePass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Batch)">
+        <MappingFragment StoreEntitySet="Batches">
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="OpeningCash" ColumnName="OpeningCash" />
+          <ScalarProperty Name="EndingCash" ColumnName="EndingCash" />
+          <ScalarProperty Name="OpeningTime" ColumnName="OpeningTime" />
+          <ScalarProperty Name="ClosingTime" ColumnName="ClosingTime" />
+          <ScalarProperty Name="TotalTender" ColumnName="TotalTender" />
+          <ScalarProperty Name="TotalChange" ColumnName="TotalChange" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="OpeningCashier" ColumnName="OpeningCashier" />
+          <ScalarProperty Name="ClosingCashier" ColumnName="ClosingCashier" />
+          <ScalarProperty Name="Sales" ColumnName="Sales" />
+          <ScalarProperty Name="OpenTransactions" ColumnName="OpenTransactions" />
+          <ScalarProperty Name="CloseTransactions" ColumnName="CloseTransactions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stations">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Station)">
+        <MappingFragment StoreEntitySet="Stations">
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="ReceiptPrinterName" ColumnName="ReceiptPrinterName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Store)">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="TransactionSeed" ColumnName="TransactionSeed" />
+          <ScalarProperty Name="SeedTransaction" ColumnName="SeedTransaction" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderEntryEx">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TenderEntryEx)">
+        <MappingFragment StoreEntitySet="TenderEntryEx">
+          <ScalarProperty Name="TenderEntryId" ColumnName="TenderEntryId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="CashAmount" ColumnName="CashAmount" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+          <ScalarProperty Name="CreditCardAmount" ColumnName="CreditCardAmount" />
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="CheckAmount" ColumnName="CheckAmount" />
+          <ScalarProperty Name="AccountAmount" ColumnName="AccountAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketSetup">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TicketSetup)">
+        <MappingFragment StoreEntitySet="TicketSetup">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="FreeMinutes" ColumnName="FreeMinutes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CashierLogs">
+      <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.CashierLog)">
+        <MappingFragment StoreEntitySet="CashierLogs">
+          <ScalarProperty Name="CashierLogId" ColumnName="CashierLogId" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="LogoutTime" ColumnName="LogoutTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

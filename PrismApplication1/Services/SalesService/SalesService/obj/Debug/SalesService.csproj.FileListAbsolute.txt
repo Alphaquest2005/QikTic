@@ -1,0 +1,162 @@
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\prism\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+D:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll.config
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesService.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\System.Windows.Interactivity.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceEvents.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceInterface.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\SalesServiceObjects.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.csprojResolveAssemblyReference.cache
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesService\obj\Debug\SalesService.pdb

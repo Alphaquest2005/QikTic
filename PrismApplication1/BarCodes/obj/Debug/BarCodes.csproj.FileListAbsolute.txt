@@ -1,0 +1,30 @@
+D:\Prism Projects\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\prism\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Insight\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Insight\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+D:\Prism Projects\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+D:\Prism Projects\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+D:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+D:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+D:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Prism Projects\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Prism Projects\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Prism Projects\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\prism\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\prism\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache

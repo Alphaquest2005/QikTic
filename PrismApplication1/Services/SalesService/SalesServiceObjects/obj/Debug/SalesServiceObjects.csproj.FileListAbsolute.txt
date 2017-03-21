@@ -1,0 +1,24 @@
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.pdb
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.dll
+D:\Prism Projects\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.pdb
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.dll
+C:\prism\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.pdb
+C:\Insight\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.csprojResolveAssemblyReference.cache
+C:\Insight\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.dll
+C:\Insight\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.pdb
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.csprojResolveAssemblyReference.cache
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.dll
+C:\Prism Projects\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\bin\Debug\SalesServiceObjects.pdb
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.dll
+C:\prism\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.pdb
+C:\Prism\QicTic\PrismApplication1\Services\SalesService\SalesServiceObjects\obj\Debug\SalesServiceObjects.csprojResolveAssemblyReference.cache

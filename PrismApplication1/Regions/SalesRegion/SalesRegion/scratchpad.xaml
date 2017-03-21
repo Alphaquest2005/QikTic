@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="SalesRegion.scratchpad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:data="clr-namespace:RMSDataAccessLayer;assembly=RMSDataAccessLayer"
+             xmlns:local="clr-namespace:SalesRegion"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:wd="clr-namespace:System.Windows.Data;assembly=PresentationFramework"
+             Width="323.2"
+             Height="Auto"
+             Background="#003300"
+             mc:Ignorable="d">
+
+
+
+
+</UserControl>

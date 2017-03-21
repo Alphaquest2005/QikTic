@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RMSModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="RMSEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Items" EntityType="RMSModel.Item" />
+    <EntitySet Name="Receipts" EntityType="RMSModel.Receipt" />
+    <EntitySet Name="Registers" EntityType="RMSModel.Register" />
+    <EntitySet Name="Taxes" EntityType="RMSModel.Tax" />
+    <EntitySet Name="TaxEntries" EntityType="RMSModel.TaxEntry" />
+    <EntitySet Name="Tenders" EntityType="RMSModel.Tender" />
+    <EntitySet Name="TenderEntries" EntityType="RMSModel.TenderEntry" />
+    <EntitySet Name="TenderTotals" EntityType="RMSModel.TenderTotal" />
+    <EntitySet Name="Transactions" EntityType="RMSModel.Transaction" />
+    <EntitySet Name="TransactionEntries" EntityType="RMSModel.TransactionEntry" />
+    <EntitySet Name="TransactionHolds" EntityType="RMSModel.TransactionHold" />
+    <EntitySet Name="TransactionHoldEntries" EntityType="RMSModel.TransactionHoldEntry" />
+    <AssociationSet Name="TransactionEntryTransaction" Association="RMSModel.TransactionEntryTransaction">
+      <End Role="TransactionEntry" EntitySet="TransactionEntries" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="TransactionEntryItem" Association="RMSModel.TransactionEntryItem">
+      <End Role="TransactionEntry" EntitySet="TransactionEntries" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <EntitySet Name="Categories" EntityType="RMSModel.Category" />
+    <EntitySet Name="Departments" EntityType="RMSModel.Department" />
+    <AssociationSet Name="ItemDepartment" Association="RMSModel.ItemDepartment">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="ItemCategory" Association="RMSModel.ItemCategory">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="CategoryDepartment" Association="RMSModel.CategoryDepartment">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ItemNotDiscountable" Type="Boolean" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemLookupCode" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="SupplierID" Type="Int32" Nullable="false" />
+    <Property Name="ParentItem" Type="Int32" Nullable="false" />
+    <Property Name="ParentQuantity" Type="Double" Nullable="false" />
+    <Property Name="PictureName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ExtendedDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="TransactionEntry" Relationship="RMSModel.TransactionEntryItem" FromRole="Item" ToRole="TransactionEntry" />
+    <NavigationProperty Name="Departments" Relationship="RMSModel.ItemDepartment" FromRole="Item" ToRole="Department" />
+    <NavigationProperty Name="Categories" Relationship="RMSModel.ItemCategory" FromRole="Item" ToRole="Category" />
+  </EntityType>
+  <EntityType Name="Receipt">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="38" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateCancel" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateDrop" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateLayaway" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplatePayment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplatePayout" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateQuote" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateSale" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateWorkOrder" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateReport" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="PoleDisplayEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="Receipt2ID" Type="Int32" Nullable="false" />
+    <Property Name="ScaleEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ScaleTimeout" Type="Double" Nullable="false" />
+    <Property Name="ScannerEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ZZBatchNumber" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="Int16" Nullable="false" />
+    <Property Name="CurrentBatchNumber" Type="Int32" Nullable="false" />
+    <Property Name="Receipt1ID" Type="Int32" Nullable="false" />
+    <Property Name="PoleDisplayMessageID" Type="Int32" Nullable="false" />
+    <Property Name="Printer1Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Printer1Options" Type="Int32" Nullable="false" />
+    <Property Name="Printer2Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Printer2Options" Type="Int32" Nullable="false" />
+    <Property Name="ChannelID" Type="Int32" Nullable="false" />
+    <Property Name="NetDisplayEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="DefaultPriceLevel" Type="Int32" Nullable="false" />
+    <Property Name="PoleDisplayName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ScaleName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ScannerName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Printer1Type" Type="Int32" Nullable="false" />
+    <Property Name="Printer2Type" Type="Int32" Nullable="false" />
+    <Property Name="CashDrawer1Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CashDrawer1Enabled" Type="Boolean" Nullable="false" />
+    <Property Name="CashDrawer1WaitForClose" Type="Boolean" Nullable="false" />
+    <Property Name="CashDrawer1OpenTimeout" Type="Int32" Nullable="false" />
+    <Property Name="CashDrawer2Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CashDrawer2Enabled" Type="Boolean" Nullable="false" />
+    <Property Name="CashDrawer2WaitForClose" Type="Boolean" Nullable="false" />
+    <Property Name="CashDrawer2OpenTimeout" Type="Int32" Nullable="false" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="MICRName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="MICREnabled" Type="Boolean" Nullable="false" />
+    <Property Name="MICRTimeout" Type="Double" Nullable="false" />
+    <Property Name="MSRName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="MSREnabled" Type="Boolean" Nullable="false" />
+    <Property Name="SignatureCaptureName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SignatureCaptureEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="SignatureCaptureFormName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TouchScreenEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="KeyboardID" Type="Int32" Nullable="false" />
+    <Property Name="DefaultServiceID" Type="Int32" Nullable="false" />
+    <Property Name="PINPadEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="PINPadName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="PINPadSystem" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="TransactionHost" Type="Int32" Nullable="false" />
+    <Property Name="RealTimeSigCap" Type="Boolean" Nullable="false" />
+    <Property Name="Printer1GiftOptions" Type="Int32" Nullable="false" />
+    <Property Name="Printer2GiftOptions" Type="Int32" Nullable="false" />
+    <Property Name="POSTaskpad" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="FixedAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="HQID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="Percentage" Type="Single" Nullable="false" />
+    <Property Name="UsePartialDollar" Type="Boolean" Nullable="false" />
+    <Property Name="ItemMaximum" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IncludePreviousTax" Type="Boolean" Nullable="false" />
+    <Property Name="Bracket00" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket01" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket02" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket03" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket04" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket05" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket06" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket07" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket08" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket09" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket10" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="17" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="ItemMinimum" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ApplyOverMinimum" Type="Boolean" Nullable="false" />
+    <Property Name="Bracket11" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket12" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket13" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket14" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket15" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket16" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket17" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket18" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket19" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket20" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket21" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket22" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket23" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket24" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket25" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket26" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket27" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket28" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket29" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Bracket30" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue01" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue02" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue03" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue04" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue05" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue06" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue07" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue08" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue09" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue10" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue11" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue12" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue13" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue14" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue15" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue16" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue17" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue18" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue19" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue20" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue21" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue22" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue23" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue24" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue25" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue26" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue27" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue28" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue29" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BracketValue30" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="TaxEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TaxID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionNumber" Type="Int32" Nullable="false" />
+    <Property Name="Tax" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TaxableAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="TransactionEntryID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="HQID" Type="Int32" Nullable="false" />
+    <Property Name="PreventOverTendering" Type="Boolean" Nullable="false" />
+    <Property Name="VerificationType" Type="Int32" Nullable="false" />
+    <Property Name="VerifyViaEDC" Type="Boolean" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="AdditionalDetailType" Type="Int16" Nullable="false" />
+    <Property Name="PrinterValidation" Type="Boolean" Nullable="false" />
+    <Property Name="ValidationLine1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ValidationLine2" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ValidationLine3" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="GLAccount" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ScanCode" Type="Int16" Nullable="false" />
+    <Property Name="RoundToValue" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="17" Unicode="true" FixedLength="false" />
+    <Property Name="MaximumAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="DoNotPopCashDrawer" Type="Boolean" Nullable="false" />
+    <Property Name="CurrencyID" Type="Int32" Nullable="false" />
+    <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+    <Property Name="ValidationMask" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="SignatureRequired" Type="Boolean" Nullable="false" />
+    <Property Name="AllowMultipleEntries" Type="Boolean" Nullable="false" />
+    <Property Name="DebitSurcharge" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SupportCashBack" Type="Boolean" Nullable="false" />
+    <Property Name="CashBackLimit" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CashBackFee" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="BatchNumber" Type="Int32" Nullable="false" />
+    <Property Name="CreditCardExpiration" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="OrderHistoryID" Type="Int32" Nullable="false" />
+    <Property Name="DropPayoutID" Type="Int32" Nullable="false" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNumber" Type="Int32" Nullable="false" />
+    <Property Name="TenderID" Type="Int32" Nullable="false" />
+    <Property Name="PaymentID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="CreditCardNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="CreditCardApprovalCode" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="AccountHolder" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="RoundingError" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="AmountForeign" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="BankNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="SerialNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="License" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" Precision="3" />
+    <Property Name="TransitNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="VisaNetAuthorizationID" Type="Int32" Nullable="false" />
+    <Property Name="DebitSurcharge" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CashBackSurcharge" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IsCreateNew" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TenderTotal">
+    <Key>
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="BatchNumber" />
+      <PropertyRef Name="TenderID" />
+      <PropertyRef Name="Open" />
+      <PropertyRef Name="Shift" />
+      <PropertyRef Name="Close" />
+      <PropertyRef Name="Count" />
+      <PropertyRef Name="OpenForeign" />
+      <PropertyRef Name="CloseForeign" />
+      <PropertyRef Name="ShiftForeign" />
+      <PropertyRef Name="ShiftRoundingError" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="BatchNumber" Type="Int32" Nullable="false" />
+    <Property Name="TenderID" Type="Int32" Nullable="false" />
+    <Property Name="Open" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Shift" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Close" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="OpenForeign" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CloseForeign" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ShiftForeign" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ShiftRoundingError" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionNumber" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="BatchNumber" Type="Int32" Nullable="false" />
+    <Property Name="Time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="CashierID" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SalesTax" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Comment" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ReferenceNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TransactionEntry" Relationship="RMSModel.TransactionEntryTransaction" FromRole="Transaction" ToRole="TransactionEntry" />
+  </EntityType>
+  <EntityType Name="TransactionEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Commission" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="FullPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNumber" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="Taxable" Type="Boolean" Nullable="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="SalesTax" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TransactionTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Transaction" Relationship="RMSModel.TransactionEntryTransaction" FromRole="TransactionEntry" ToRole="Transaction" />
+    <NavigationProperty Name="Items" Relationship="RMSModel.TransactionEntryItem" FromRole="TransactionEntry" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="TransactionHold">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionType" Type="Int16" Nullable="false" />
+    <Property Name="HoldComment" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="RecallID" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PriceLevel" Type="Int16" Nullable="false" />
+    <Property Name="DiscountMethod" Type="Int16" Nullable="false" />
+    <Property Name="DiscountPercent" Type="Double" Nullable="false" />
+    <Property Name="Taxable" Type="Boolean" Nullable="false" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="DeltaDeposit" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="DepositOverride" Type="Boolean" Nullable="false" />
+    <Property Name="DepositPrevious" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PaymentsPrevious" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TaxPrevious" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SalesRepID" Type="Int32" Nullable="false" />
+    <Property Name="ShipToID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ExpirationOrDueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReturnMode" Type="Boolean" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShippingChargePurchased" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ShippingChargeOverride" Type="Boolean" Nullable="false" />
+    <Property Name="ShippingServiceID" Type="Int32" Nullable="false" />
+    <Property Name="ShippingTrackingNumber" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ShippingNotes" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="ReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="ExchangeID" Type="Int32" Nullable="false" />
+    <Property Name="ChannelType" Type="Int32" Nullable="false" />
+    <Property Name="DefaultDiscountReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="DefaultReturnReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="DefaultTaxChangeReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="BatchNumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionHoldEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="EntryKey" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionHoldID" Type="Int32" Nullable="false" />
+    <Property Name="RecallID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="QuantityPurchased" Type="Double" Nullable="false" />
+    <Property Name="QuantityOnOrder" Type="Double" Nullable="false" />
+    <Property Name="QuantityRTD" Type="Double" Nullable="false" />
+    <Property Name="QuantityReserved" Type="Double" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="FullPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PriceSource" Type="Int16" Nullable="false" />
+    <Property Name="Comment" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DetailID" Type="Int32" Nullable="false" />
+    <Property Name="Taxable" Type="Boolean" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="SalesRepID" Type="Int32" Nullable="false" />
+    <Property Name="SerialNumber1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="SerialNumber2" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="SerialNumber3" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="VoucherNumber" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="VoucherExpirationDate" Type="DateTime" Precision="3" />
+    <Property Name="DBTimeStamp" Type="Binary" MaxLength="8" FixedLength="true" p1:StoreGeneratedPattern="Computed" />
+    <Property Name="DiscountReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="ReturnReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="TaxChangeReasonCodeID" Type="Int32" Nullable="false" />
+    <Property Name="ItemTaxID" Type="Int32" Nullable="false" />
+    <Property Name="ComponentQuantityReserved" Type="Double" Nullable="false" />
+    <Property Name="TransactionTime" Type="DateTime" Precision="3" />
+    <Property Name="IsAddMoney" Type="Boolean" Nullable="false" />
+    <Property Name="VoucherID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="TransactionEntryTransaction">
+    <End Type="RMSModel.TransactionEntry" Role="TransactionEntry" Multiplicity="*" />
+    <End Type="RMSModel.Transaction" Role="Transaction" Multiplicity="1" />
+  </Association>
+  <Association Name="TransactionEntryItem">
+    <End Type="RMSModel.TransactionEntry" Role="TransactionEntry" Multiplicity="1" />
+    <End Type="RMSModel.Item" Role="Item" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="HQID" Nullable="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="17" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="DBTimeStamp" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <NavigationProperty Name="Item" Relationship="RMSModel.ItemCategory" FromRole="Category" ToRole="Item" />
+    <NavigationProperty Name="Departments" Relationship="RMSModel.CategoryDepartment" FromRole="Category" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="HQID" Nullable="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="code" Nullable="false" MaxLength="17" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="DBTimeStamp" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <NavigationProperty Name="Item" Relationship="RMSModel.ItemDepartment" FromRole="Department" ToRole="Item" />
+    <NavigationProperty Name="Category" Relationship="RMSModel.CategoryDepartment" FromRole="Department" ToRole="Category" />
+  </EntityType>
+  <Association Name="ItemDepartment">
+    <End Type="RMSModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="RMSModel.Department" Role="Department" Multiplicity="*" />
+  </Association>
+  <Association Name="ItemCategory">
+    <End Type="RMSModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="RMSModel.Category" Role="Category" Multiplicity="*" />
+  </Association>
+  <Association Name="CategoryDepartment">
+    <End Type="RMSModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="RMSModel.Department" Role="Department" Multiplicity="*" />
+  </Association>
+</Schema>

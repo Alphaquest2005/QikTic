@@ -1,0 +1,6 @@
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\bin\Debug\RxCareDataAccessLayer.dll.config
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\bin\Debug\RxCareDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\bin\Debug\RxCareDataAccessLayer.pdb
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\obj\Debug\RxCareDataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\obj\Debug\RxCareDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\RxCareDataAccessLayer\obj\Debug\RxCareDataAccessLayer.pdb

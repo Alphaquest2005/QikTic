@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>PrismMVVMLibrary</id>
+    <version>1.0.0.5</version>
+    <title>Prism MVVM Library</title>
+    <authors>Stephen Schaff</authors>
+    <owners>Stephen Schaff</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contains a ViewModelBase for Prism that will tell you if you are in Design Mode or not.  (Copied from MVVM Light)
+      Also contains some Prism and Unity design time class fakes.</description>
+    <summary>View Model Base for Prism (Design Mode Flag)</summary>
+    <tags>MVVM</tags>
+    <dependencies>
+      <dependency id="Unity" version="2.1.0.0" />
+      <dependency id="Prism" version="4.1.0.0" />
+      <dependency id="NSubstitute" version="1.4.0.0" />
+    </dependencies>
+  </metadata>
+</package>

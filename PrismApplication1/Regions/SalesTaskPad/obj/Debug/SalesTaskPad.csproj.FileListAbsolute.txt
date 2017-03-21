@@ -1,0 +1,65 @@
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\SalesTaskPad.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\SalesTaskPad.pdb
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\NSubstitute.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\PrismMVVMLibrary.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\RMSDataAccessLayer.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\System.Windows.Interactivity.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\RMSDataAccessLayer.pdb
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\bin\Debug\NSubstitute.xml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad.csprojResolveAssemblyReference.cache
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPadView.g.cs
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad_MarkupCompile.cache
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad_MarkupCompile.lref
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPadView.baml
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad.g.resources
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad.dll
+D:\Users\joeseph\Documents\Visual Studio 2010\Projects\PrismRegion2\Regions\SalesTaskPad\SalesTaskPad\obj\Debug\SalesTaskPad.pdb
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPadView.g.cs
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad_MarkupCompile.cache
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad_MarkupCompile.lref
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\PrismMVVMLibrary.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\NSubstitute.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\System.Windows.Interactivity.xml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPadView.baml
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad.g.resources
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\obj\Debug\SalesTaskPad.pdb
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\SalesTaskPad.dll
+D:\Prism Projects\PrismApplication1\Regions\SalesTaskPad\bin\Debug\SalesTaskPad.pdb

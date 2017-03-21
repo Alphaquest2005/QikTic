@@ -1,0 +1,539 @@
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\App.baml
+G:\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+G:\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+G:\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+G:\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+G:\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+G:\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+G:\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+G:\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+G:\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+G:\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+G:\PrismApplication1\QuickSales\bin\Debug\EntityFramework.dll
+G:\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+G:\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+G:\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+G:\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\EntityFramework.xml
+G:\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+G:\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+G:\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+G:\PrismApplication1\QuickSales\obj\Debug\App.baml
+G:\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+G:\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+G:\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+D:\Prism Projects\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+D:\Prism Projects\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+C:\prism\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+C:\prism\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+C:\prism\PrismApplication1\QuickSales\obj\Debug\App.baml
+C:\prism\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+C:\prism\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+C:\prism\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+C:\prism\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+C:\prism\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+C:\prism\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+C:\prism\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+C:\prism\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+C:\prism\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\App.baml
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+C:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\App.baml
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+G:\Insight\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+G:\Insight\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\live\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\App.baml
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+D:\Prism Projects\live\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\App.baml
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.dll
+D:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.pdb
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\TSP100.dll
+C:\Insight\PrismApplication1\QuickSales\bin\Debug\TSP100.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesService.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesService.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceEvents.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesServiceInterface.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.pdb
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\App.baml
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+C:\Prism Projects\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\ModuleCatalog.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.App.config
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\App.xaml.cs
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\System.Windows.Interactivity.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\PrismMVVMLibrary.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.dll
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\SUT.PrintEngine.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\SalesRegion.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Transaction.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.Interactivity.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Prism.UnityExtensions.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\BarCodes.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\TSP100.pdb
+C:\prism\QicTic\PrismApplication1\QuickSales\bin\Debug\NSubstitute.xml
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csprojResolveAssemblyReference.cache
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.baml
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.baml
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\App.baml
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\LogInScreen.g.cs
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\Shell.g.cs
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\App.g.cs
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_Content.g.cs
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales_MarkupCompile.cache
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
+C:\prism\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+C:\Prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Prism\QicTic\PrismApplication1\QuickSales\bin\Debug\Microsoft.Practices.ObjectBuilder2.xml
+C:\Prism\QicTic\PrismApplication1\QuickSales\bin\Debug\EntityFramework.dll
+C:\Prism\QicTic\PrismApplication1\QuickSales\bin\Debug\EntityFramework.xml
+C:\Prism\GitRepositiory\QicTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\Prism\GitRepositiory\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\Prism\GitRepositiory\QicTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\bin\Debug\QuickSales.exe.config
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.exe
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.pdb

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RMSEntities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RMSEntitiesStoreContainer">
+    <EntitySet Name="Transaction" EntityType="RMSEntities.Store.Transaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionEntry" EntityType="RMSEntities.Store.TransactionEntry" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="TransactionTransactionEntry" Association="RMSEntities.Store.TransactionTransactionEntry">
+      <End Role="Transaction" EntitySet="Transaction" />
+      <End Role="TransactionEntry" EntitySet="TransactionEntry" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionNumber" />
+    </Key>
+    <Property Name="TransactionNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CashierID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionEntry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="TransactionTransactionEntry">
+    <End Role="Transaction" Type="RMSEntities.Store.Transaction" Multiplicity="1" />
+    <End Role="TransactionEntry" Type="RMSEntities.Store.TransactionEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="TransactionNumber" />
+      </Principal>
+      <Dependent Role="TransactionEntry">
+        <PropertyRef Name="TransactionNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

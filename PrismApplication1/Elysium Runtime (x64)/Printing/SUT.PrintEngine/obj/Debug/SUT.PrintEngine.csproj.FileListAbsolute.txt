@@ -1,0 +1,106 @@
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.App.config
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.pdb
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\WPFToolkit.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\bin\Debug\WPFToolkit.pdb
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csprojResolveAssemblyReference.cache
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Views\PrintControlView.baml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.baml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.baml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.baml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.baml
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Views\PrintControlView.g.cs
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.g.cs
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.g.cs
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.g.cs
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.g.cs
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine_MarkupCompile.cache
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.g.resources
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Controls.LoadScreen.LoadScreen.resources
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Properties.Resources.resources
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Resources.StringTable.resources
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csproj.GenerateResource.Cache
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.dll
+D:\Users\joeseph\Downloads\WPFPrintEngine_Alpha_1\WPFPrintEngine\Source\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.pdb
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.App.config
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.pdb
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\WPFToolkit.pdb
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Views\PrintControlView.baml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.baml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.baml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.baml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.baml
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Views\PrintControlView.g.cs
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.g.cs
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.g.cs
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.g.cs
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.g.cs
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine_MarkupCompile.cache
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.g.resources
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Controls.LoadScreen.LoadScreen.resources
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Properties.Resources.resources
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Resources.StringTable.resources
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csproj.GenerateResource.Cache
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.dll
+C:\prism\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.App.config
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\WPFToolkit.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\WPFToolkit.pdb
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csprojResolveAssemblyReference.cache
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Views\PrintControlView.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Views\PrintControlView.g.cs
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.g.cs
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.g.cs
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\SmallWaitScreenView.g.cs
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\WaitScreen\WaitScreenView.g.cs
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine_MarkupCompile.cache
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.g.resources
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Controls.LoadScreen.LoadScreen.resources
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Properties.Resources.resources
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.Resources.StringTable.resources
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csproj.GenerateResource.Cache
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.dll
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.pdb
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Properties\DesignTimeResources.baml
+D:\Prism Projects\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Properties\DesignTimeResources.g.cs
