@@ -69,7 +69,14 @@ namespace QuickSales
         public App()
         {
             Application.Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             LoginRoutine();
+        }
+
+        private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            MessageBox.Show(((Exception) e.ExceptionObject).Message + ": ----------------------------: " +
+                            ((Exception) e.ExceptionObject).StackTrace);
         }
 
         public  void LoginRoutine()

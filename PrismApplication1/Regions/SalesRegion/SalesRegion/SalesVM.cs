@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.Objects;
 using System.Linq;
 using System.Printing;
@@ -388,24 +389,44 @@ namespace SalesRegion
             }  
         }
 
-       
+
 
         public void CloseTicket()
         {
-            if (!(TransactionData is Ticket) || batch == null) return;
-            var tic = (Ticket) TransactionData;
-            if (tic.OpenClose == false) return;
-
-            using (RMSModel rms = new RMSModel())
+            try
             {
-                rms.Attach(tic);
-                tic.CloseBatchId = batch.BatchId;
-                tic.OpenClose = false;
-                ((TicketEntry) tic.TransactionEntry).EndDateTimeEx = DateTime.Now;
-                RaisePropertyChanged(nameof(TransactionData));
-                TransactionData.Status = "Closed";
-                rms.SaveChanges();
+                if (!(TransactionData is Ticket) || batch == null) return;
+                var tic = (Ticket) TransactionData;
+                if (tic == null) return;
+                if (tic.OpenClose == false) return;
+
+                using (RMSModel rms = new RMSModel())
+                {
+                    var res = rms.TransactionBase.OfType<Ticket>().Include("TransactionEntry.Item.TicketSetup")
+                        .Include("Station")
+                        .Include("Cashier")
+                        .Include("TenderEntryEx")
+                        .Include("Batch")
+                        .Include("Customer").FirstOrDefault(x => x.TransactionId == tic.TransactionId);
+
+                    res.CloseBatchId = batch.BatchId;
+                    res.OpenClose = false;
+                    ((TicketEntry) res.TransactionEntry).EndDateTimeEx = DateTime.Now;
+                    RaisePropertyChanged(nameof(TransactionData));
+                    res.Status = "Closed";
+                    rms.SaveChanges();
+                    rms.AcceptAllChanges();
+                    TransactionData = res;
+                    TransactionData.RefreshData();
+                }
             }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
         }
 
         public void NewTicket()

@@ -294,7 +294,6 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\bin\De
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ObjectBuilder2.xml
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\bin\Debug\Microsoft.Practices.Unity.xml
-C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csprojResolveAssemblyReference.cache
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Views\PrintControlView.baml
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Controls\ProgressDialog\ProgressDialogView.baml
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\Resources\Themes\Generic\Theme.baml
@@ -313,3 +312,4 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\De
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csproj.GenerateResource.Cache
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\Printing\SUT.PrintEngine\obj\Debug\SUT.PrintEngine.csprojResolveAssemblyReference.cache

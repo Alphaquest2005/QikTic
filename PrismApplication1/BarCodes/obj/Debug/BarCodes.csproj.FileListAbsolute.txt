@@ -28,3 +28,7 @@ C:\prism\QicTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
 C:\prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
 C:\prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
 C:\Prism\QicTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb

@@ -594,3 +594,4 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.g.resources
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.Properties.Resources.resources
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\obj\Debug\QuickSales.csproj.GenerateResource.Cache
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QuickSales\bin\Debug\RMSDataAccessLayer.dll.config

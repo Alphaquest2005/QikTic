@@ -549,3 +549,4 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\Regions\SalesRegion\SalesRegion
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Regions\SalesRegion\SalesRegion\obj\Debug\SalesRegion.g.resources
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Regions\SalesRegion\SalesRegion\obj\Debug\SalesRegion.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\Regions\SalesRegion\SalesRegion\obj\Debug\SalesRegion.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\Regions\SalesRegion\SalesRegion\bin\Debug\RMSDataAccessLayer.dll.config

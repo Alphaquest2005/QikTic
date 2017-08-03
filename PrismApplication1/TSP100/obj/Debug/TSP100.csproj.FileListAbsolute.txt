@@ -26,3 +26,11 @@ C:\prism\QicTic\PrismApplication1\TSP100\bin\Debug\RMSDataAccessLayer.pdb
 C:\prism\QicTic\PrismApplication1\TSP100\obj\Debug\TSP100.csprojResolveAssemblyReference.cache
 C:\prism\QicTic\PrismApplication1\TSP100\obj\Debug\TSP100.dll
 C:\prism\QicTic\PrismApplication1\TSP100\obj\Debug\TSP100.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\bin\Debug\TSP100.dll
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\bin\Debug\TSP100.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\bin\Debug\RMSDataAccessLayer.dll
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\bin\Debug\RMSDataAccessLayer.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\bin\Debug\RMSDataAccessLayer.dll.config
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\obj\Debug\TSP100.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\obj\Debug\TSP100.dll
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\TSP100\obj\Debug\TSP100.pdb
