@@ -69,28 +69,13 @@ namespace RMSDataAccessLayer
         }
 
 
-        public  DateTime? EndDateTimeEx
-        {
-            get
-            {
-                return EndDateTime;
-            }
-            set
-            {
-                EndDateTime = DateTime.Now;
-                // set the discount
-                
-                
-                OnPropertyChanged("EndDateTimeEx");
-                OnPropertyChanged("Status");
-            }
-        }
+
 
         public new TimeSpan Quantity
         {
             get
             {
-                if (EndDateTime == null)
+                if (EndDateTime == null || EndDateTime < StartDateTime)
                 {
                     return ( DateTime.Now - StartDateTime);
                 }

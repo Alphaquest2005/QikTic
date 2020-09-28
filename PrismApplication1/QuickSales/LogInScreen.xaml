@@ -845,5 +845,103 @@
 
         </Grid>
 
+        <Grid x:Name="DetailedReport"
+              Margin="-80,178.667,-80.145,-629.642"
+              Width="286"
+                                      Height="620"
+                                      HorizontalAlignment="Stretch"
+                                      Background="White" Grid.Row ="4">
+            <Grid.Resources>
+                <CollectionViewSource x:Key="MyViewSource" Source="{Binding ClosedTransactions}">
+                    <CollectionViewSource.GroupDescriptions>
+                        <PropertyGroupDescription PropertyName="TransactionEntry.Item.Description"/>
+                    </CollectionViewSource.GroupDescriptions>
+                </CollectionViewSource>
+            </Grid.Resources>
+            <StackPanel Orientation="Vertical">
+            <TextBlock Width="268"
+                                               Height="35"
+                                               
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Top"
+                       
+                                               FontFamily="Candara"
+                                               FontSize="24"
+                                               Text="{Binding Station.Store.Company.CompanyName}"
+                                               TextAlignment="Center"
+                                               TextWrapping="Wrap" />
+            <TextBlock Width="268"
+                                               Height="20"
+                                             
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Top"
+                                               FontFamily="Candara"
+                                               Text="{Binding Station.Store.Company.Address}"
+                                               TextAlignment="Center"
+                                               TextWrapping="Wrap" />
+            <Rectangle Width="268"
+                                               Height="1"
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Top"
+                                               Fill="#FFF4F4F5"
+                                               Stroke="Black" />
+                <TextBlock Width="173"
+                           Height="20"
+                           
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Top"
+                           FontSize="10"
+                           Text="{Binding OpenCashier.Name, StringFormat=Opening Cashier: {0}}"
+                           TextWrapping="Wrap" />
+                <TextBlock Width="173"
+                                               Height="20"
+                                            
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Top"
+                                               FontSize="10"
+                                               Text="{Binding CloseCashier.Name, StringFormat=Closing Cashier: {0}}"
+                                               TextWrapping="Wrap" />
+            <TextBlock Width="173"
+                                               Height="17"
+                                             
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Top"
+                                               FontSize="10"
+                                               Text="{Binding Station.StationCode, StringFormat=  Store Code: {0},
+                                                              Mode=OneWay}"
+                                               TextWrapping="Wrap" />
+            <!--<Rectangle Width="268"
+                                               Height="1"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Fill="#FFF4F4F5"
+                                               Stroke="Black" />-->
+            <ListView ItemsSource="{Binding ClosedTransactions}" FontSize="7" Margin="0,0,0,50"  >
+
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Transaction#" Width="50" DisplayMemberBinding="{Binding TransactionNumber}" />
+                        <GridViewColumn Header="Start" Width="80" DisplayMemberBinding="{Binding TransactionEntry.StartDateTime}" />
+                        <GridViewColumn Header="End" Width="80" DisplayMemberBinding="{Binding TransactionEntry.EndDateTime}" />
+                        <GridViewColumn Header="Duration" Width="30" DisplayMemberBinding="{Binding TransactionEntry.Quantity,StringFormat=hh\\:mm}" />
+                        <GridViewColumn Header="Amount" Width="30" DisplayMemberBinding="{Binding TransactionEntry.Amount, StringFormat=C}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+            <TextBlock Width="264"
+                                               Height="65"
+                                              
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               FontFamily="Candara"
+                                               TextWrapping="Wrap"><Run Text="All Prices below include 15% VAT Tax" />
+                                        <LineBreak /><Run Text="$3.45 for 1st Hour" />
+                                        <LineBreak /><Run Text="$2.30 for every hour after" /></TextBlock>
+            <!--<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="10,223,0,0" VerticalAlignment="Top" Width="309"/>-->
+            </StackPanel>
+        </Grid>
+
     </Grid>
 </Window>

@@ -309,8 +309,8 @@
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
                            Foreground="White"
-                           Text="{Binding EndDateTimeEx,
-                                          Mode=TwoWay,
+                           Text="{Binding EndDateTime,
+                                          Mode=OneWay,
                                           StringFormat=Dept. Time: {0:M/d/yyyy h:mm:ss tt}}"
                            TextWrapping="Wrap" />
                 <!--<TextBlock HorizontalAlignment="Left" Height="20" Margin="10,58,0,0" TextWrapping="Wrap" Text="End Time" VerticalAlignment="Top" Width="61" FontSize="13.333" LineStackingStrategy="BlockLineHeight" LineHeight="13.333" Foreground="White"/>-->
@@ -538,7 +538,7 @@
                                          VerticalAlignment="Top"
                                          Direction="FilterControl_Direction_1"
                                          Filter="SearchBox_Filter_1"
-                                         FilterFiringInterval="1"
+                                         FilterFiringInterval="3"
                                          FilterTextBindingPath="SearchCriteria"
                                          PreviewKeyDown="SearchBox_PreviewKeyDown_1"
                                          TargetControl="{Binding ElementName=SearchListCtl}" />
@@ -603,6 +603,7 @@
                             Margin="0,-39,5,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
+                            PreviewMouseDown="PreventDoubleClick"
                             Click="NewLostTicket"
                             Content="L"
                             FontSize="20"
@@ -619,6 +620,7 @@
                             Margin="0,-38,44,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
+                            PreviewMouseDown="PreventDoubleClick"
                             Click="NewSpecialTicket"
                             Content="Tx"
                             FontSize="20"
@@ -636,6 +638,7 @@
                             Margin="0,-39,0,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
+                            PreviewMouseDown="PreventDoubleClick"
                             Click="NewTicket">
                         <Button.Background>
                             <SolidColorBrush Opacity="0.0" Color="#FFDDDDDD" />
@@ -649,7 +652,9 @@
                             Margin="0,-39,77.4,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
+                            PreviewMouseDown="PreventDoubleClick"
                             Click="NewTaxi"
+
                             Content="T"
                             FontSize="20"
                             FontWeight="Bold"
@@ -666,6 +671,7 @@
                             Margin="0,-39,37.4,0"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
+                            PreviewMouseDown="PreventDoubleClick"
                             Click="NewDelivery"
                             Content="D"
                             FontSize="20"
@@ -783,7 +789,7 @@
                                                        Margin="16,0,0,0"
                                                        HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
-                                                       Text="{Binding EndDateTime,
+                                                       Text="{Binding EndDateTime, Mode=OneWay,
                                                                       StringFormat=Dept. Time: \{0:M/d/yyyy h:mm:ss tt\}}"
                                                        TextWrapping="Wrap" />
                                             <TextBlock Width="268"

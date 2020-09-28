@@ -12,6 +12,7 @@ namespace RMSDataAccessLayer
            
             
         }
-        
+
+        public bool OpenClose { get { return ((TicketEntry)this.TransactionEntry).EndDateTime is null; } }
     }
 }

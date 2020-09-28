@@ -110,7 +110,6 @@
     <Property Type="Int32" Name="CashierId" Nullable="false" />
     <Property Type="String" Name="Comment" Nullable="true" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="ReferenceNumber" Nullable="true" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Type="String" Name="Status" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Type="String" Name="StoreCode" MaxLength="30" FixedLength="false" Unicode="false" Nullable="true" />
     <NavigationProperty Name="Customer" Relationship="RMSEntities.CustomerTransaction" FromRole="Transaction" ToRole="Customer" />
     <NavigationProperty Name="Cashier" Relationship="RMSEntities.CashierTransactionBase" FromRole="TransactionBase" ToRole="Cashier" />
@@ -119,6 +118,7 @@
     <Property Type="Int32" Name="TransactionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <NavigationProperty Name="TransactionEntry" Relationship="RMSEntities.FK_TransactionTransactionEntry" FromRole="TransactionBase" ToRole="TransactionEntryBase" />
     <NavigationProperty Name="TenderEntryEx" Relationship="RMSEntities.FK_TransactionBaseTenderEntryEx" FromRole="TransactionBase" ToRole="TenderEntryEx" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TransactionEntryBase" Abstract="true">
     <Key>
@@ -184,7 +184,6 @@
   </Association>
   <EntityType Name="Ticket" BaseType="RMSEntities.TransactionBase">
     <Property Type="Int32" Name="PassId" Nullable="true" />
-    <Property Name="OpenClose" Type="Boolean" Nullable="false" />
     <Property Name="CloseBatchId" Type="Int32" />
     <NavigationProperty Name="ClosedBatch" Relationship="RMSEntities.FK_TransactionBase_Ticket_Batches" FromRole="Ticket" ToRole="Batch" />
   </EntityType>

@@ -32,3 +32,9 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb

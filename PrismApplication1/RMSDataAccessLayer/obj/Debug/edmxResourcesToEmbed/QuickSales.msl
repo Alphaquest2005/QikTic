@@ -35,6 +35,7 @@
     <EntitySetMapping Name="TransactionBase">
       <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.TransactionBase)">
         <MappingFragment StoreEntitySet="TransactionBase">
+          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
           <ScalarProperty Name="StationId" ColumnName="StationId" />
           <ScalarProperty Name="BatchId" ColumnName="BatchId" />
@@ -44,14 +45,12 @@
           <ScalarProperty Name="CashierId" ColumnName="CashierId" />
           <ScalarProperty Name="Comment" ColumnName="Comment" />
           <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="StoreCode" ColumnName="StoreCode" />
         </MappingFragment>
       </EntityTypeMapping>
       <EntityTypeMapping TypeName="IsTypeOf(RMSEntities.Ticket)">
         <MappingFragment StoreEntitySet="TransactionBase_Ticket">
           <ScalarProperty Name="CloseBatchId" ColumnName="CloseBatchId" />
-          <ScalarProperty Name="OpenClose" ColumnName="OpenClose" />
           <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
           <ScalarProperty Name="PassId" ColumnName="PassId" />
         </MappingFragment>

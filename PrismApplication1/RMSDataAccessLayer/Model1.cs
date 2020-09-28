@@ -3098,8 +3098,7 @@ namespace RMSDataAccessLayer
         /// <param name="time">Initial value of the Time property.</param>
         /// <param name="cashierId">Initial value of the CashierId property.</param>
         /// <param name="transactionId">Initial value of the TransactionId property.</param>
-        /// <param name="openClose">Initial value of the OpenClose property.</param>
-        public static Ticket CreateTicket(global::System.Int32 stationId, global::System.Int32 batchId, global::System.String transactionNumber, global::System.DateTime time, global::System.Int32 cashierId, global::System.Int32 transactionId, global::System.Boolean openClose)
+        public static Ticket CreateTicket(global::System.Int32 stationId, global::System.Int32 batchId, global::System.String transactionNumber, global::System.DateTime time, global::System.Int32 cashierId, global::System.Int32 transactionId)
         {
             Ticket ticket = new Ticket();
             ticket.StationId = stationId;
@@ -3108,7 +3107,6 @@ namespace RMSDataAccessLayer
             ticket.Time = time;
             ticket.CashierId = cashierId;
             ticket.TransactionId = transactionId;
-            ticket.OpenClose = openClose;
             return ticket;
         }
 
@@ -3139,30 +3137,6 @@ namespace RMSDataAccessLayer
         private Nullable<global::System.Int32> _PassId;
         partial void OnPassIdChanging(Nullable<global::System.Int32> value);
         partial void OnPassIdChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Boolean OpenClose
-        {
-            get
-            {
-                return _OpenClose;
-            }
-            set
-            {
-                OnOpenCloseChanging(value);
-                ReportPropertyChanging("OpenClose");
-                _OpenClose = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("OpenClose");
-                OnOpenCloseChanged();
-            }
-        }
-        private global::System.Boolean _OpenClose;
-        partial void OnOpenCloseChanging(global::System.Boolean value);
-        partial void OnOpenCloseChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3309,6 +3283,7 @@ namespace RMSDataAccessLayer
                 OnEndDateTimeChanging(value);
                 ReportPropertyChanging("EndDateTime");
                 _EndDateTime = StructuralObject.SetValidValue(value);
+                
                 ReportPropertyChanged("EndDateTime");
                 OnEndDateTimeChanged();
             }
@@ -3818,30 +3793,6 @@ namespace RMSDataAccessLayer
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String Status
-        {
-            get
-            {
-                return _Status;
-            }
-            set
-            {
-                OnStatusChanging(value);
-                ReportPropertyChanging("Status");
-                _Status = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Status");
-                OnStatusChanged();
-            }
-        }
-        private global::System.String _Status;
-        partial void OnStatusChanging(global::System.String value);
-        partial void OnStatusChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public global::System.String StoreCode
         {
             get
@@ -3887,6 +3838,30 @@ namespace RMSDataAccessLayer
         private global::System.Int32 _TransactionId;
         partial void OnTransactionIdChanging(global::System.Int32 value);
         partial void OnTransactionIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Status
+        {
+            get
+            {
+                return _Status;
+            }
+            set
+            {
+                OnStatusChanging(value);
+                ReportPropertyChanging("Status");
+                _Status = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Status");
+                OnStatusChanged();
+            }
+        }
+        private global::System.String _Status;
+        partial void OnStatusChanging(global::System.String value);
+        partial void OnStatusChanged();
 
         #endregion
 

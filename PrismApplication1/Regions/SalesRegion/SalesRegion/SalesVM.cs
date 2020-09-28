@@ -17,12 +17,282 @@ using RMSDataAccessLayer;
 using SUT.PrintEngine.Paginators;
 using SUT.PrintEngine.Utils;
 using System.Data.Entity;
+using System.IO;
+using System.IO.Packaging;
+using System.Runtime.InteropServices;
+using System.Windows.Documents;
+using System.Windows.Media.Imaging;
+using System.Windows.Xps;
+using System.Windows.Xps.Packaging;
+using PdfSharp.Pdf.Printing;
+using SUT.PrintEngine;
 using TSP100;
 
 namespace SalesRegion
 {
     public class SalesVM : ViewModelBase
     {
+        public class WPF2PDF
+        {
+            private static int PixelsPerInch = 96;
+            private static double PaperWidth = 8.5;
+            private static int PaperHeight = 28;
+
+            public static string CreatePDF(ref Grid rpt, string reportName)
+            {
+
+
+
+                XpsDocumentWriter writer;
+                MemoryStream lMemoryStream = new MemoryStream();
+                Package package = Package.Open(lMemoryStream, FileMode.Create);
+                XpsDocument doc = new XpsDocument(package);
+                DrawingVisual v = PrintVisual.GetVisual(ref rpt);
+                // create XPS file based on a WPF Visual, and store it in a memorystream
+
+                if (rpt.ActualWidth > PaperWidth)
+                {
+
+
+                    PageContent pageCnt = new PageContent();
+                    FixedPage page;
+                    // var oldParent = RemoveChild(rpt);
+                    page = new FixedPage()
+                    {
+                        Height = rpt.ActualHeight,
+                        Width = rpt.ActualWidth,
+                    }; // {Height = (PaperWidth*PixelsPerInch), Width = (PaperHeight*PixelsPerInch), };
+                    RenderTargetBitmap bmp = new RenderTargetBitmap((int)rpt.ActualWidth, (int)rpt.ActualHeight, 0, 0,
+                        PixelFormats.Pbgra32);
+                    bmp.Render(v);
+
+                    Image image = new Image();
+                    image.Source = bmp;
+                    page.Children.Add(image);
+                    // ((System.Windows.Markup.IAddChild) pageCnt).AddChild(page);
+
+
+                    writer = XpsDocument.CreateXpsDocumentWriter(doc);
+                    writer.Write(page);
+
+                    //page.Children.Remove(rpt);
+                    //AddChild(rpt, oldParent);
+                }
+                else
+                {
+
+                    writer = XpsDocument.CreateXpsDocumentWriter(doc);
+                    writer.Write(v);
+                }
+
+
+                doc.Close();
+                package.Close();
+
+                var pdfXpsDoc = PdfSharp.Xps.XpsModel.XpsDocument.Open(lMemoryStream);
+                string file = Path.Combine(
+                    Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location),
+                    reportName + ".pdf");
+
+                PdfSharp.Xps.XpsConverter.Convert(pdfXpsDoc, file, 0);
+
+                return file;
+            }
+        }
+
+        public static class PdfFilePrinter
+        {
+            private const string PdfPrinterDriveName = "Microsoft Print To PDF";
+
+            [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+            private class DOCINFOA
+            {
+                [MarshalAs(UnmanagedType.LPStr)] public string pDocName;
+                [MarshalAs(UnmanagedType.LPStr)] public string pOutputFile;
+                [MarshalAs(UnmanagedType.LPStr)] public string pDataType;
+            }
+
+            [DllImport("winspool.drv", EntryPoint = "OpenPrinterA", SetLastError = true, CharSet = CharSet.Ansi,
+                ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+            private static extern bool OpenPrinter([MarshalAs(UnmanagedType.LPStr)] string szPrinter,
+                out IntPtr hPrinter, IntPtr pd);
+
+            [DllImport("winspool.drv", EntryPoint = "ClosePrinter", SetLastError = true, ExactSpelling = true,
+                CallingConvention = CallingConvention.StdCall)]
+            private static extern bool ClosePrinter(IntPtr hPrinter);
+
+            [DllImport("winspool.drv", EntryPoint = "StartDocPrinterA", SetLastError = true, CharSet = CharSet.Ansi,
+                ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+            private static extern int StartDocPrinter(IntPtr hPrinter, int level,
+                [In, MarshalAs(UnmanagedType.LPStruct)]
+                DOCINFOA di);
+
+            [DllImport("winspool.drv", EntryPoint = "EndDocPrinter", SetLastError = true, ExactSpelling = true,
+                CallingConvention = CallingConvention.StdCall)]
+            private static extern bool EndDocPrinter(IntPtr hPrinter);
+
+            [DllImport("winspool.drv", EntryPoint = "StartPagePrinter", SetLastError = true, ExactSpelling = true,
+                CallingConvention = CallingConvention.StdCall)]
+            private static extern bool StartPagePrinter(IntPtr hPrinter);
+
+            [DllImport("winspool.drv", EntryPoint = "EndPagePrinter", SetLastError = true, ExactSpelling = true,
+                CallingConvention = CallingConvention.StdCall)]
+            private static extern bool EndPagePrinter(IntPtr hPrinter);
+
+            [DllImport("winspool.drv", EntryPoint = "WritePrinter", SetLastError = true, ExactSpelling = true,
+                CallingConvention = CallingConvention.StdCall)]
+            private static extern bool WritePrinter(IntPtr hPrinter, IntPtr pBytes, int dwCount, out int dwWritten);
+
+            public static void PrintXpsToPdf(byte[] bytes, string outputFilePath, string documentTitle)
+            {
+                // Get Microsoft Print to PDF print queue
+                var pdfPrintQueue = GetMicrosoftPdfPrintQueue();
+
+                // Copy byte array to unmanaged pointer
+                var ptrUnmanagedBytes = Marshal.AllocCoTaskMem(bytes.Length);
+                Marshal.Copy(bytes, 0, ptrUnmanagedBytes, bytes.Length);
+
+                // Prepare document info
+                var di = new DOCINFOA
+                {
+                    pDocName = documentTitle,
+                    pOutputFile = outputFilePath,
+                    pDataType = "RAW"
+                };
+
+                // Print to PDF
+                var errorCode = SendBytesToPrinter(pdfPrintQueue.Name, ptrUnmanagedBytes, bytes.Length, di,
+                    out var jobId);
+
+                // Free unmanaged memory
+                Marshal.FreeCoTaskMem(ptrUnmanagedBytes);
+
+                // Check if job in error state (for example not enough disk space)
+                var jobFailed = false;
+                try
+                {
+                    var pdfPrintJob = pdfPrintQueue.GetJob(jobId);
+                    if (pdfPrintJob.IsInError)
+                    {
+                        jobFailed = true;
+                        pdfPrintJob.Cancel();
+                    }
+                }
+                catch
+                {
+                    // If job succeeds, GetJob will throw an exception. Ignore it. 
+                }
+                finally
+                {
+                    pdfPrintQueue.Dispose();
+                }
+
+                if (errorCode > 0 || jobFailed)
+                {
+                    try
+                    {
+                        if (File.Exists(outputFilePath))
+                        {
+                            File.Delete(outputFilePath);
+                        }
+                    }
+                    catch
+                    {
+                        // ignored
+                    }
+                }
+
+                if (errorCode > 0)
+                {
+                    throw new Exception($"Printing to PDF failed. Error code: {errorCode}.");
+                }
+
+                if (jobFailed)
+                {
+                    throw new Exception("PDF Print job failed.");
+                }
+            }
+
+            private static int SendBytesToPrinter(string szPrinterName, IntPtr pBytes, int dwCount,
+                DOCINFOA documentInfo, out int jobId)
+            {
+                jobId = 0;
+                var dwWritten = 0;
+                var success = false;
+
+                if (OpenPrinter(szPrinterName.Normalize(), out var hPrinter, IntPtr.Zero))
+                {
+                    jobId = StartDocPrinter(hPrinter, 1, documentInfo);
+                    if (jobId > 0)
+                    {
+                        if (StartPagePrinter(hPrinter))
+                        {
+                            success = WritePrinter(hPrinter, pBytes, dwCount, out dwWritten);
+                            EndPagePrinter(hPrinter);
+                        }
+
+                        EndDocPrinter(hPrinter);
+                    }
+
+                    ClosePrinter(hPrinter);
+                }
+
+                // TODO: The other methods such as OpenPrinter also have return values. Check those?
+
+                if (success == false)
+                {
+                    return Marshal.GetLastWin32Error();
+                }
+
+                return 0;
+            }
+
+            private static PrintQueue GetMicrosoftPdfPrintQueue()
+            {
+                PrintQueue pdfPrintQueue = null;
+
+                try
+                {
+                    using (var printServer = new PrintServer())
+                    {
+                        var flags = new[] { EnumeratedPrintQueueTypes.Local };
+                        // FirstOrDefault because it's possible for there to be multiple PDF printers with the same driver name (though unusual)
+                        // To get a specific printer, search by FullName property instead (note that in Windows, queue name can be changed)
+                        pdfPrintQueue = printServer.GetPrintQueues(flags)
+                            .FirstOrDefault(lq => lq.QueueDriver.Name == PdfPrinterDriveName);
+                    }
+
+                    if (pdfPrintQueue == null)
+                    {
+                        throw new Exception($"Could not find printer with driver name: {PdfPrinterDriveName}");
+                    }
+
+                    if (!pdfPrintQueue.IsXpsDevice)
+                    {
+                        throw new Exception(
+                            $"PrintQueue '{pdfPrintQueue.Name}' does not understand XPS page description language.");
+                    }
+
+                    return pdfPrintQueue;
+                }
+                catch
+                {
+                    pdfPrintQueue?.Dispose();
+                    throw;
+                }
+            }
+        }
+
+        private static SalesVM _instance;
+
+       
+
+        public static SalesVM Instance
+        {
+            get { return _instance; }
+        }
+
+
         private readonly IUnityContainer container;
         private readonly IEventAggregator eventAggregator;
 
@@ -46,7 +316,7 @@ namespace SalesRegion
             this.container = container;
             this.eventAggregator = eventAggregator;
 
-
+            _instance = this;
             StartUp();
 
         }
@@ -93,7 +363,7 @@ namespace SalesRegion
                 }
                 else
                 {
-
+           
                     txn = (T)Activator.CreateInstance(typeof(T));
                 }
 
@@ -328,7 +598,8 @@ namespace SalesRegion
                 }
                 if (SearchItem is TransactionBase)
                 {
-                    GoToTransaction((TransactionBase) SearchItem);
+                    GoToTransaction(((TransactionBase)SearchItem).TransactionNumber.ToString());
+
                 }
 
             }
@@ -341,6 +612,7 @@ namespace SalesRegion
             TransactionData = trn;
             if (TransactionData is Ticket) CloseTicket();
             TransactionData.RefreshData();
+            CheckForOverage();
         }
 
 
@@ -375,9 +647,8 @@ namespace SalesRegion
                 tkt.Item = rItm;
                 if (typeof (T) == typeof (TicketEntry))
                 {
-                    (tkt as TicketEntry).StartDateTime = DateTime.Now;
-                   
-                       ((Ticket)TransactionData).OpenClose = true;
+                    (tkt as TicketEntry).StartDateTime = DateTime.Now;                   
+                    
                    
                 }
                
@@ -395,6 +666,7 @@ namespace SalesRegion
         {
             try
             {
+                
                 if (!(TransactionData is Ticket) || batch == null) return;
                 var tic = (Ticket) TransactionData;
                 if (tic == null) return;
@@ -408,17 +680,20 @@ namespace SalesRegion
                         .Include("TenderEntryEx")
                         .Include("Batch")
                         .Include("Customer").FirstOrDefault(x => x.TransactionId == tic.TransactionId);
-
-                    res.CloseBatchId = batch.BatchId;
-                    res.OpenClose = false;
-                    ((TicketEntry) res.TransactionEntry).EndDateTimeEx = DateTime.Now;
-                    RaisePropertyChanged(nameof(TransactionData));
-                    res.Status = "Closed";
-                    rms.SaveChanges();
-                    rms.AcceptAllChanges();
-                    TransactionData = res;
-                    TransactionData.RefreshData();
+                    if (res.OpenClose == true)
+                    {
+                        res.CloseBatchId = batch.BatchId;
+                        ((TicketEntry) res.TransactionEntry).EndDateTime = DateTime.Now;
+                      
+                        rms.SaveChanges();
+                        rms.AcceptAllChanges();
+                        TransactionData = res;
+                        TransactionData.RefreshData();
+                        RaisePropertyChanged(nameof(TransactionData));
+                    }
                 }
+
+                CheckForOverage();
             }
 
             catch (Exception e)
@@ -429,11 +704,19 @@ namespace SalesRegion
 
         }
 
+        private void CheckForOverage()
+        {
+            if (TransactionData.TotalSales > 32.00)
+                MessageBox.Show(
+                    $"This ticket is total charge is ${TransactionData.TotalSales}. Please double check and Mark it for Accounts");
+        }
+
         public void NewTicket()
         {
             //create new transaction
             
                 CreateNewTransaction<Ticket>();
+                
                 InsertItemTransactionEntry(new TicketItem() {Description = "Ticket"});
             
         }
@@ -441,7 +724,7 @@ namespace SalesRegion
         public void NewDelivery()
         {
             CreateNewTransaction<Ticket>();
-            InsertItemTransactionEntry(new TicketItem() { Description = "Delivery" });
+            InsertItemTransactionEntry(new TicketItem() { Description = "Delivery", });
         }
 
         public void NewTaxi()
@@ -475,7 +758,7 @@ namespace SalesRegion
             // get status of printer and stuff
             PrintTSP100 tsp100 = new PrintTSP100();
              PrintServer printserver = new PrintServer(station.PrintServer);
-          
+          if(Environment.MachineName.ToUpper() != "Joseph-PC".ToUpper())
             tsp100.PrintTicket(t, TransactionData.Station.ReceiptPrinterName);
 
         }
@@ -519,12 +802,59 @@ namespace SalesRegion
             //}
         }
 
+        public void Transaction2Pdf(ref Grid fwe)
+        {
+           
+            if (!Directory.Exists($@"{AppDomain.CurrentDomain.BaseDirectory}\Archieve"))
+                Directory.CreateDirectory($@"{AppDomain.CurrentDomain.BaseDirectory}\Archieve");
+            var fileName = $@"{AppDomain.CurrentDomain.BaseDirectory}\Archieve\{batch.BatchId}";
+            //WPF2PDF.CreatePDF(ref fwe,fileName);
 
-        public void GotoTransaction(string filterText)
+           
+          
+
+
+            Size visualSize;
+
+            visualSize = new Size(fwe.ActualWidth, fwe.ActualHeight); // paper size
+             fwe.Measure(visualSize);
+            fwe.Arrange(new Rect(visualSize));
+            fwe.UpdateLayout();
+
+            DrawingVisual visual =
+                PrintControlFactory.CreateDrawingVisual(fwe, fwe.ActualWidth, fwe.ActualHeight);
+
+
+            SUT.PrintEngine.Paginators.VisualPaginator page = new SUT.PrintEngine.Paginators.VisualPaginator(
+                visual, visualSize, new Thickness(0, 0, 0, 0), new Thickness(0, 0, 0, 0));
+            page.Initialize(false);
+
+            var ms = new MemoryStream();
+            var package = Package.Open(ms, FileMode.Create);
+            var doc = new XpsDocument(package);
+            var writer = XpsDocument.CreateXpsDocumentWriter(doc);
+            writer.Write(page);
+            doc.Close();
+            package.Close();
+
+            // Get XPS file bytes
+            var bytes = ms.ToArray();
+            ms.Dispose();
+
+            // Print to PDF
+
+            PdfFilePrinter.PrintXpsToPdf(bytes, fileName + ".pdf", "");
+        }
+
+        public void GoToTransaction(string filterText)
         {
             using (var ctx = new RMSModel())
             {
-                var res = ctx.TransactionBase.Include(x => x.TransactionEntry).Include(x => x.TransactionEntry.Item.TicketSetup).FirstOrDefault(x => x.TransactionNumber.Contains(filterText));
+                var res = ctx.TransactionBase.Include(x => x.TransactionEntry)
+                    .Include(x => x.Station)
+                    .Include(x => x.Cashier)
+                    .Include(x => x.TransactionEntry.Item.TicketSetup)
+                    .FirstOrDefault(x => x.TransactionNumber.EndsWith(filterText));
                 if(res != null) GoToTransaction(res);
             }
         }

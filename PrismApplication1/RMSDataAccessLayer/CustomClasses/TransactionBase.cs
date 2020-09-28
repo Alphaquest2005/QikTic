@@ -36,21 +36,7 @@ namespace RMSDataAccessLayer
             OnPropertyChanged("TotalChange");
 
         }
-
-        void TransactionEntries_AssociationChanged(object sender, System.ComponentModel.CollectionChangeEventArgs e)
-        {
-            if (e.Action == System.ComponentModel.CollectionChangeAction.Add)
-            {
-                if (Status != null)
-                {
-                    
-                }
-            }
-
-           TotalSales = 0;
-        }
-
-    
+   
 
         public double TotalTender
         {

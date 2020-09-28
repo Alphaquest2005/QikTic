@@ -63,6 +63,10 @@ Batch batch;
                 batch = (from b in db.Batches
                          .Include("Transactions.TransactionEntry.Item.TicketSetup")
                          .Include("ClosedTransactions.TransactionEntry.Item.TicketSetup")
+                         .Include("Station.Store.Company")
+                          .Include("OpenCashier")
+                        .Include("CloseCashier")
+                             // .Include("Cashier")
                          where b.StationId == station.StationId && b.Status == "Open" && b.OpeningCashier == cashier.Id
                          select b).FirstOrDefault();
 
@@ -82,6 +86,7 @@ Batch batch;
 
         OpenDrawerGrd.DataContext = batch;
         CloseDrawerGrd.DataContext = batch;
+            DetailedReport.DataContext = batch;
 
         }
 
@@ -297,6 +302,7 @@ Batch batch;
             else
             {
                 OpenDrawerGrd.DataContext = batch;
+                DetailedReport.DataContext = batch;
                 MessageBox.Show("Batch already open. Please close batch before proceding!");
                 return;
             }
@@ -340,6 +346,8 @@ Batch batch;
                 return;
             }
             SUT.PrintEngine.PrintVisual.Print(ref ZGrd,batch.Station.ReceiptPrinterName);
+            SUT.PrintEngine.PrintVisual.Print(ref DetailedReport, batch.Station.ReceiptPrinterName);
+            SalesRegion.SalesVM.Instance.Transaction2Pdf(ref DetailedReport);//
         }
 
         private void BackBtn1_Click(object sender, RoutedEventArgs e)

@@ -15,6 +15,20 @@ C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\Microsof
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.pdb
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.dll.config
-C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csprojResolveAssemblyReference.cache
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.dll
 C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.pdb
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csprojAssemblyReference.cache
+C:\Prism\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csproj.CopyComplete
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.dll.config
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\QicTic Tests.pdb
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.pdb
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\bin\Debug\RMSDataAccessLayer.dll.config
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.csproj.CopyComplete
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.dll
+C:\Users\josep\OneDrive\GitRepositiory\QikTic\PrismApplication1\QicTic Tests\obj\Debug\QicTic Tests.pdb

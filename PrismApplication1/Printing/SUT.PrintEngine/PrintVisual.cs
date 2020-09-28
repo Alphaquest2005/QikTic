@@ -27,10 +27,24 @@ namespace SUT.PrintEngine
             page.Initialize(false);
 
             PrintDialog pd = new PrintDialog();
-            pd.PrintQueue = printServer.GetPrintQueue(PrinterName);
+            if (PrinterName == "")
+            {
+                var res = pd.ShowDialog();
+                pd.PrintDocument(page, ""); 
+            }
+            else
+            {
+                pd.PrintQueue = printServer.GetPrintQueue(PrinterName);
+                pd.PrintDocument(page, "");
 
+            }
+            
+            
+        }
 
-            pd.PrintDocument(page, "");
+        public static DrawingVisual GetVisual(ref Grid fwe)
+        {
+            return PrintControlFactory.CreateDrawingVisual(fwe, fwe.ActualWidth, fwe.ActualHeight);
         }
     }
 }

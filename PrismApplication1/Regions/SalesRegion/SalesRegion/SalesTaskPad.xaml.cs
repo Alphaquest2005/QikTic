@@ -70,11 +70,16 @@ namespace SalesRegion
 
             var uie = e.OriginalSource as Control;
 
-            if (uie == null) uie = SearchBox as Control;
+            if (uie == null)
+                uie = SearchBox as Control;
+
+
+            
+
             if (uie.Name == "PART_FilterBox")
             {
-               
 
+                
                 if (e.Key == Key.Enter) //pkey == Key.Enter &&
                 {
                     SearchBox.RaiseFilterEvent();
@@ -82,8 +87,9 @@ namespace SalesRegion
                         SearchListCtl.SelectedIndex = 0;
                     if (SearchListCtl.SelectedItem == null && SearchBox.FilterText != "")
                     {
-                        SalesVM.GotoTransaction(SearchBox.FilterText);
+                        SalesVM.GoToTransaction(SearchBox.FilterText);
                     }
+                    
                     (uie as TextBox).Text = "";
                     //e.Handled = true;
                     MoveToNextControl(uie);
@@ -101,6 +107,7 @@ namespace SalesRegion
                 {
                     SalesView.GotoNextSalesStep(Key.Right);
                     pkey = Key.None;
+                    return;
                 }
             }
 
@@ -131,7 +138,7 @@ namespace SalesRegion
                 MoveToNextControl(sender);
             }
         }
-        static Key pkey;
+        static Key pkey = Key.None;
         private void SearchBox_PreviewKeyDown_1(object sender, KeyEventArgs e)
         {
            
@@ -139,11 +146,31 @@ namespace SalesRegion
             if (SearchListCtl.Items.Count == 1)
                 SearchListCtl.SelectedIndex = 0;
 
+            if (e.Key == Key.Add)
+            {
+                NewTicket(sender, e);
+                SearchBox.FilterText = "";
+                HideSearchList();
+                SearchBox.Focus();
+               e.Handled = true;
+                return;
+                //MoveToNextControl(uie);
+
+            }
+
             if (e.Key == Key.Enter)
             {
                 
                 //select the item
-                LocalProcesItem(SearchListCtl.SelectedItem);
+                if(SearchListCtl.SelectedItem == null)
+                {
+                   
+                }
+                else
+                {
+                    LocalProcesItem(SearchListCtl.SelectedItem);
+                }
+                
                
 
                 MoveToNextControl(sender);
@@ -422,6 +449,15 @@ LocalProcesItem(SearchListCtl.SelectedItem);
         {
             InputBox.Visibility = Visibility.Hidden;
         }
+
+        private void PreventDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount > 1)
+            {
+                e.Handled = true;
+            }
+        }
+        
     }
 
 
