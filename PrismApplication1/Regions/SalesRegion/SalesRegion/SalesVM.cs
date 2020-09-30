@@ -326,13 +326,14 @@ namespace SalesRegion
             using (RMSModel rms = new RMSModel())
             {
                 ca = (from c in rms.CashierLogs
-                      where c.MachineName == Environment.MachineName && c.Status == "LogIn"
+                      where c.MachineName == (Environment.MachineName == "JOSEPH-PC" ? "GRENREALBOOT" : Environment.MachineName)
+                            && c.Status == "LogIn"
                       orderby c.LoginTime descending
                       select c.Cashier).FirstOrDefault();
 
 
                 station = (from s in rms.Stations.Include("Store").Include("Store.Company")
-                           where s.MachineName == Environment.MachineName
+                           where s.MachineName == (Environment.MachineName == "JOSEPH-PC" ? "GRENREALBOOT" : Environment.MachineName)
                            select s).FirstOrDefault();
 
                 batch = rms.Batches

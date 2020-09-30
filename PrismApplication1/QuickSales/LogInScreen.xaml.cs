@@ -51,8 +51,8 @@ Batch batch;
             xUsername.Focus();
 
             station = (from s in db.Stations
-                               where s.MachineName == Environment.MachineName
-                               select s).FirstOrDefault();
+                               where s.MachineName == (Environment.MachineName == "JOSEPH-PC"? "GRENREALBOOT": Environment.MachineName)
+                       select s).FirstOrDefault();
             //cashier = (from c in db.CashierLogs
             //                   where c.MachineName == Environment.MachineName && c.Status == "LogIn"
             //                   select c.Cashier).FirstOrDefault();
@@ -345,9 +345,12 @@ Batch batch;
                 MessageBox.Show("Please Close Batch");
                 return;
             }
+
+            
+
             SUT.PrintEngine.PrintVisual.Print(ref ZGrd,batch.Station.ReceiptPrinterName);
             SUT.PrintEngine.PrintVisual.Print(ref DetailedReport, batch.Station.ReceiptPrinterName);
-            SalesRegion.SalesVM.Instance.Transaction2Pdf(ref DetailedReport);//
+           // SalesRegion.SalesVM.Instance.Transaction2Pdf(ref DetailedReport);//
         }
 
         private void BackBtn1_Click(object sender, RoutedEventArgs e)

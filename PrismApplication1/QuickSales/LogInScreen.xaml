@@ -846,11 +846,14 @@
         </Grid>
 
         <Grid x:Name="DetailedReport"
-              Margin="-80,178.667,-80.145,-629.642"
+              Margin="0,600,0,-10000"
+              Grid.Row="3"
               Width="286"
-                                      Height="620"
+                                      Height="Auto"
+              
                                       HorizontalAlignment="Stretch"
-                                      Background="White" Grid.Row ="4">
+                                      VerticalAlignment="Top"
+                                      Background="White" >
             <Grid.Resources>
                 <CollectionViewSource x:Key="MyViewSource" Source="{Binding ClosedTransactions}">
                     <CollectionViewSource.GroupDescriptions>
@@ -858,9 +861,10 @@
                     </CollectionViewSource.GroupDescriptions>
                 </CollectionViewSource>
             </Grid.Resources>
-            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" Height="Auto" Margin="5">
             <TextBlock Width="268"
                                                Height="35"
+                                               
                                                
                                                HorizontalAlignment="Stretch"
                                                VerticalAlignment="Top"
@@ -916,15 +920,15 @@
                                                VerticalAlignment="Top"
                                                Fill="#FFF4F4F5"
                                                Stroke="Black" />-->
-            <ListView ItemsSource="{Binding ClosedTransactions}" FontSize="7" Margin="0,0,0,50"  >
+                <ListView ItemsSource="{Binding  Transactions}" FontSize="7" FontWeight="Bold" Margin="0,0,0,50" Height="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
 
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Transaction#" Width="50" DisplayMemberBinding="{Binding TransactionNumber}" />
-                        <GridViewColumn Header="Start" Width="80" DisplayMemberBinding="{Binding TransactionEntry.StartDateTime}" />
-                        <GridViewColumn Header="End" Width="80" DisplayMemberBinding="{Binding TransactionEntry.EndDateTime}" />
-                        <GridViewColumn Header="Duration" Width="30" DisplayMemberBinding="{Binding TransactionEntry.Quantity,StringFormat=hh\\:mm}" />
-                        <GridViewColumn Header="Amount" Width="30" DisplayMemberBinding="{Binding TransactionEntry.Amount, StringFormat=C}" />
+                        <GridViewColumn Header="Trans.#" Width="40" DisplayMemberBinding="{Binding TransactionId}" />
+                        <GridViewColumn Header="Start" Width="88" DisplayMemberBinding="{Binding TransactionEntry.StartDateTime}" />
+                        <GridViewColumn Header="End" Width="85" DisplayMemberBinding="{Binding TransactionEntry.EndDateTime}" />
+                        <GridViewColumn Header="Dur." Width="30" DisplayMemberBinding="{Binding TransactionEntry.Quantity,StringFormat=hh\\:mm}" />
+                        <GridViewColumn Header="Amt" Width="30" DisplayMemberBinding="{Binding TransactionEntry.Amount, StringFormat=C}" />
                     </GridView>
                 </ListView.View>
             </ListView>
